@@ -1,0 +1,1244 @@
+[
+	{
+		"name": "Worker",
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"],
+		"cost": 80
+	},
+	{
+		"name": "Settler",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 106,
+		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
+			"Requires at least [2] population"],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Great General",
+		"unitType": "Civilian",
+		"uniques": [
+            "Empire enters a [8]-turn Golden Age <by consuming this unit>",
+            "[+15]% Strength bonus for [Military] units within [2] tiles",
+            "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+			"Can be earned through combat",
+			"Great Person - [War]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Scout",
+		"unitType": "Knight",
+		"movement": 2,
+		"strength": 5,
+		"cost": 25,
+		"obsoleteTech":"Guard"
+		"attackSound": "nonmetalhit"
+	},
+	
+	//Training Camp
+	{
+		"name":"Archer"
+		"unitType":"Archer"
+		"movement":2
+		"range":2
+		"strength":6
+		"rangedStrength": 7
+		"cost":50
+		"obsoleteTech":"Gunpowder"
+		"upgradesTo":"Bomber"
+		"requiredTech":"Targets"
+	}
+	{
+		"name":"Knight"
+		"unitType":"Knight"
+		"movement":2
+		"strength":10
+		"cost":50
+		"upgradesTo":"Barbarian"
+		"obsoleteTech":"Barbarians"
+		"requiredTech":"Knights Codex"
+	}
+	{
+		"name":"Giant"
+		"unitType":"Giant"
+		"movement":2
+		"strength":14
+		"cost":60
+		"obsoleteTech":"Battle Ram"
+		"upgradesTo":"Battle Ram"
+		"requiredTech":"Destroy Power"
+		"uniques":["Can only attack [City] units", "[+50]% Strength <vs cities> <when attacking>"]
+	}
+	{
+		"name":"Mini P.E.K.K.A"
+		"unitType":"Knight"
+		"movement":2
+		"strength":15
+		"cost":85
+		"upgradesTo":"Barbarian Barrel"
+		"obsoleteTech":"Iron Barrels"
+		"requiredResource":"Iron"
+		"requiredTech":"Robotic Construction"
+	}
+	{
+		"name":"Musketeer"
+		"unitType":"Gunpowder"
+		"movement":2
+		"range":2
+		"strength":8
+		"rangedStrength": 10
+		"cost":80
+		"upgradesTo":"Inferno Tower"
+		"obsoleteTech":"Towers"
+		"requiredTech":"Musketeers"
+	}
+	{
+		"name":"Minion"
+		"unitType":"Flying"
+		"movement":2
+		"range":1
+		"strength":5
+		"rangedStrength": 8
+		"cost":45
+		"obsoleteTech":"Mega Minion"
+		"upgradesTo":"Skeleton Dragon"
+		"requiredTech":"Minions"
+		"uniques":["Can upgrade to [Mega Minion]"]
+	}
+	//Goblins Stadium
+	{
+		"name":"Goblin"
+		"unitType":"Goblin"
+		"movement":2
+		"strength":8
+		"cost":45
+		"upgradesTo":"Electro Spirit"
+		"obsoleteTech":"Electric Magic"
+		"requiredTech":"Training of Goblins"
+		"uniques":["No movement cost to pillage", "Can move after attacking", "Can move immediately once bought"]
+	} 
+	{
+		"name":"Spear Goblin"
+		"unitType":"Goblin"
+		"movement":2
+		"range":2
+		"strength":5
+		"rangedStrength": 8
+		"cost":45
+		"obsoleteTech":"Fire Magic"
+		"upgradesTo":"Wizard"
+		"requiredTech":"Training of Goblins"
+		"uniques":["No movement cost to pillage", "Can move after attacking", "Can move immediately once bought", "Can upgrade to [Fire Spirit]", "Can only attack [All] units"]
+	}
+	{
+		"name":"Goblin Cage"
+		"unitType":"Siege"
+		"uniqueTo":"Goblins"
+		"movement":1
+		"strength":7
+		"cost":75
+		"upgradesTo":"Mortar"
+		"obsoleteTech":"Powerful Buildings"
+		"requiredTech":"Pillaging"
+		"uniques":["No Sight", "Free [Goblin Brawler] appears <upon being defeated>"]
+	} 
+	{
+		"name":"Goblin Brawler"
+		"unitType":"Goblin"
+		"movement":2
+		"strength":13
+		"upgradesTo":"Mortar"
+		"uniques":["Unbuildable"]
+	}
+	{
+		"name":"Hog Rider"
+		"movement":3
+		"strength":12
+		"uniqueTo":"Temple of Riders"
+		"replaces":"Giant"
+		"unitType":"Mounted"
+		"requiredTech":"Riding on Hogs"
+		"cost":90
+		"upgradesTo":"Battle Ram"
+		"requiredResource":"Animals"
+		"uniques":["[+100]% Strength <vs cities> <when attacking>","Withdraws before melee combat <with [33]% chance>"],
+	}
+	//Bone Pit
+	{
+		"name":"Skeleton"
+		"unitType":"Skeleton"
+		"strength":4
+		"cost":50
+		"movement":2
+		"obsoleteTech":"Flying Bats"
+		"upgradesTo":"Bats"
+		"requiredTech":"Dead Army"
+		"uniques":["[2] free [Skeleton Minion] units appear", "[+100]% Strength <when attacking>", "[-50]% maintenance costs"]
+	}
+	{
+		"name":"Skeleton Minion"
+		"unitType":"Skeleton"
+		"strength":4
+		"movement":2
+		//"requiredTech":"Dead Army"
+		"upgradesTo":"Bats"
+		"uniques":["Unbuildable", "[+100]% Strength <when attacking>", "[-50]% maintenance costs"]
+	}
+	{
+		"name":"Bomber"
+		"unitType":"Gunpowder"
+		"requiredTech":"Gunpowder"
+		"strength":5
+		"rangedStrength":11
+		"range":2
+		"movement":2
+		"cost":80
+		"upgradesTo":"Bomb Tower"
+		"obsoleteTech":"Towers"
+		"uniques":["[2] additional attacks per turn", "Can only attack [non-[Flying]] units" /*"Must set up to ranged attack"*/]
+	}
+	{
+		"name":"Valkyrie"
+		"unitType":"Knight"
+		"requiredTech":"Great Warriors"
+		"cost":130
+		"strength":18
+		"movement":2
+		"upgradesTo":"Flying Machine"
+		"obsoleteTech":"Flying Apparatus"
+		"uniques":["[-25]% Strength <when defending>"]
+	}
+	{
+		"name":"Skeleton Dragon"
+		"unitType":"Flying"
+		"requiredTech":"Flying Skeletons"
+		"cost":120
+		"strength":10
+		"range":2
+		"upgradesTo":"Baby Dragon"
+		"obsoleteTech":"Real Dragon"
+		"uniqueTo":"Blue Kingdom"
+		"rangedStrength":17
+		"movement":2
+	}
+	//Barbarian Bowl
+	{
+		"name":"Barbarian"
+		"unitType":"Barbarian"
+		"cost":90
+		"strength":14
+		"movement":2
+		"obsoleteTech":"Guard"
+		"requiredTech":"Barbarians"
+		"uniques":["No movement cost to pillage", "[+50]% XP gained from combat", "[+20]% Strength <when below [35] HP> <when attacking>", "Can upgrade to [Guard Minion] <after discovering [Guard]>"]
+	}
+	{
+		"name":"Battle Ram"
+		"unitType":"Barbarian"
+		"movement":2
+		"cost":210
+		"strength":11
+		"upgradesTo":"Royal Giant"
+		"obsoleteTech":"Three Musketers"
+		"requiredTech":"Battle Ram"
+		"uniques":["Can only attack [City] units", "[2] free [Barbarian] units appear <upon being defeated>", "[+150]% Strength <vs cities> <when attacking>"]
+	}
+	{
+		"name":"Mega Minion"
+		"unitType":"Flying"
+		"movement":2
+		"strength":16
+		"cost":110
+		"upgradesTo":"Flying Machine"
+		"obsoleteTech":"Flying Apparatus"
+		"requiredTech":"Mega Minion"
+		"uniques":["[-50]% Strength <vs cities> <when attacking>"]
+	}
+	{
+		"name":"Barbarian Barrel"
+		"unitType":"Barbarian"
+		"movement":2
+		"strength":20
+		"cost":90
+		"requiredResource":"Iron"
+		"requiredTech":"Iron Barrels"
+		"upgradesTo":"P.E.K.K.A"
+		"obsoleteTech":"Magic Steel"
+		"uniques":["Cannot attack", "[-100]% Strength <vs cities>", "May Paradrop up to [2] tiles from inside friendly territory", "Free [Barbarian] appears <by consuming this unit>", "Can move after attacking"]
+	}
+	//Spell Valley
+	{
+		"name":"Wizard"
+		"unitType":"Magic"
+		"cost":140
+		"strength":10
+		"rangedStrength":16
+		"movement":2
+		"range":2
+		"upgradesTo":"Dark Prince"
+		"obsoleteTech":"Royal Knights"
+		"requiredTech":"Fire Magic"
+		"uniques":["[+50]% Strength <vs cities>", "[+50]% Strength <vs [Flying] units>", "[+50]% Strength <with [25]% chance>"]
+	}
+	{
+		"name":"Fire Spirit"
+		"unitType":"Spirit"
+		"cost":45
+		"strength":13
+		"movement":2
+		"upgradesTo":"Royal Hog"
+		"obsoleteTech":"Royal Hogs"
+		"requiredTech":"Fire Magic"
+		"uniques":["Self-destructs when attacking"]
+	}
+	{
+		"name":"Electro Spirit"
+		"unitType":"Spirit"
+		"cost":55
+		"strength":11
+		"movement":2
+		"upgradesTo":"Royal Hog"
+		"obsoleteTech":"Royal Hogs"
+		"requiredTech":"Electric Magic"
+		"uniques":["Invisible to non-adjacent units", "Heals [100] damage if it kills a unit"]
+	}
+	{
+		"name":"Bomb Tower"
+		"unitType":"Siege"
+		"cost":150
+		"strength":13
+		"rangedStrength":21
+		"range":2
+		"movement":1
+		"upgradesTo":"Prince"
+		"obsoleteTech":"Royal Knights"
+		"requiredTech":"Towers"
+		"uniques":["[1] Sight", "Cannot attack <when fighting in [Foreign Land] tiles>", "Must set up to ranged attack"]
+	}
+	{
+		"name":"Inferno Tower"
+		"unitType":"Siege"
+		"cost":165
+		"strength":16
+		"rangedStrength":5
+		"range":2
+		"movement":4
+		"upgradesTo":"Dark Prince"
+		"obsoleteTech":"Royal Knights"
+		"requiredTech":"Towers"
+		"uniques":["[-1] Sight", "Cannot attack <when fighting in [Foreign Land] tiles>", "Must set up to ranged attack","[4] additional attacks per turn", "Cannot move <in [Foreign Land] tiles>"]
+	}
+	//Builder's Workshop 
+	{
+	"name":"Bats"
+	"unitType":"Flying"
+	"cost":120
+	"strength":15
+	"movement":2
+	"upgradesTo":"Balloon"
+	"obsoleteTech":"Big Walls"
+	"requiredTech":"Flying Bats"
+	"uniques":["[+50]% XP gained from combat", "[-33]% maintenance costs", "Heals [10] damage if it kills a unit", "Invisible to non-adjacent units", "[+175]% Strength <starting from the [Serenity Peak]>"]
+	}
+	{
+		"name":"Mortar"
+		"unitType":"Siege"
+		"cost":200
+		"strength":15
+		"rangedStrength":24
+		"range":3
+		"movement":1
+		"upgradesTo":"Battle Healer"
+		"obsoleteTech":"God's Medicines"
+		"requiredTech":"Powerful Buildings"
+		"uniques":["No Sight", "Cannot attack <when fighting in [Foreign Land] tiles>", "Must set up to ranged attack", "Ranged attacks may be performed over obstacles"]
+	}
+	{
+		"name":"Flying Machine"
+		"unitType":"Flying"
+		"cost":150
+		"strength":18
+		"rangedStrength":18
+		"range":2
+		"movement":2
+		"upgradesTo":"Balloon"
+		"obsoleteTech":"Big Walls"
+		"requiredTech":"Flying Apparatus"
+	}
+	//Royal Arena
+	{
+		"name":"Guardian"
+		"unitType":"Skeleton"
+		"cost":350
+		"strength":20
+		"movement":2
+		"upgradesTo":"Battle Healer"
+		"obsoleteTech":"Poison"
+		"requiredTech":"Guard"
+		"uniques":["[2] free [Guard Minion] units appear", "Withdraws before melee combat <with [25]% chance>"]
+	}
+	{
+		"name":"Guard Minion"
+		"unitType":"Knight"
+		"strength":20
+		"movement":2
+		"upgradesTo":"Battle Healer"
+		"uniques":["Withdraws before melee combat <with [25]% chance>", "Unbuildable"]
+	}
+	{
+		"name":"Baby Dragon"
+		"unitType":"Flying"
+		"cost":200
+		"strength":21
+		"rangedStrength":26
+		"movement":2
+		"upgradesTo":"Hunter"
+		"obsoleteTech":"Defense Line"
+		"requiredTech":"Real Dragon"
+		//"uniques":[]
+	}
+	{
+		"name":"Witch"
+		"unitType":"Magic"
+		"cost":250
+		"strength":15
+		"rangedStrength":21
+		"movement":2
+		"requiredTech":"Witches"
+		"upgradesTo":"Dart Goblin"
+		"obsoleteTech":"Darts"
+		"uniques":["[2] free [Skeleton Minion] units appear <for all movement> <costs [+25 Gold] stats>"]
+	}
+	{
+		"name":"P.E.K.K.A"
+		"unitType":"Knight"
+		"cost":450
+		"strength":37
+		"movement":2
+		"upgradesTo":"Elite Barbarian"
+		"obsoleteTech":"Aggressive Offensive"
+		"requiredTech":"Magic Steel"
+		"uniques":["Consumes [3] [Iron]", "[+20]% Strength <when defending>"]
+	}
+	//Royal Arena
+	{
+		"name":"Dark Prince"
+		"unitType":"Mounted"
+		"cost":300
+		"movement":3
+		"strength":30
+		"upgradesTo":"Tesla Tower"
+		"obsoleteTech":"Tesla"
+		"requiredResource":"Iron"
+		"requiredTech":"Royal Knights"
+		"uniques":["[+20]% Strength <when defending> <when above [80] HP>", "Consumes [1] [Animals]"]
+	}
+	{
+		"name":"Prince"
+		"unitType":"Mounted"
+		"cost":300
+		"movement":3
+		"strength":33
+		"upgradesTo":"Tesla Tower"
+		"obsoleteTech":"Tesla"
+		"requiredTech":"Royal Knights"
+		"requiredResource":"Animals"
+		"uniques":["[-15]% Strength <vs cities>"]
+	}
+	{
+		"name":"Royal Recruit"
+		"unitType":"Knight"
+		"cost":170
+		"movement":2
+		"strength":25
+		"upgradesTo":"Golem"
+		"obsoleteTech":"Stone Golem"
+		"requiredTech":"Royal Guard"
+		"uniques":["[+20]% to Flank Attack bonuses", "[+100]% Strength <starting from the [Serenity Peak]>"]
+	}
+	{
+		"name":"Royal Hog"
+		"unitType":"Mounted"
+		"movement":2
+		"strength":30
+		"cost":250
+		"upgradesTo":"Zappi"
+		"obsoleteTech":"Tesla"
+		"requiredTech":"Royal Hogs"
+		"requiredResource":"Animals"
+		"uniques":["Can only attack [City] units", "[+20]% Strength <vs cities>", "[+50]% Strength <starting from the [Miner's Mine]>"]
+	}
+	{
+		"name":"Royal Giant"
+		"unitType":"Giant"
+		"movement":2
+		"range":1
+		"strength":38
+		"rangedStrength":32
+		"cost":450
+		"upgradesTo":"Goblin Giant"
+		"obsoleteTech":"Stone Golem"
+		"requiredTech":"Three Musketers"
+		"uniques":["Can upgrade to [Golem]"]
+	}
+	{
+		"name":"Balloon"
+		"unitType":"Flying"
+		"movement":2
+		"range":1
+		"strength":30
+		"rangedStrength":40
+		"cost":350
+		"upgradesTo":"Ram Rider"
+		"obsoleteTech":"Wild Riders"
+		"requiredTech":"Big Walls"
+		"uniques":["Can only attack [City] units", "Can only attack [Siege] units", "Free [Bomb] appears <upon being defeated>"]
+	}
+	//Frozen Peak
+	{
+		"name":"Battle Healer"
+		"unitType":"Buffer"
+		"movement":2
+		"strength":30
+		"cost":350
+		"upgradesTo":"Electro Wizard"
+		"obsoleteTech":"Electric Shot's"
+		"requiredTech":"God's Medicines"
+		"uniques":["Heals [10] damage if it kills a unit", "All adjacent units heal [15] HP when healing", "[+33]% XP gained from combat", "May capture killed [Spirit] units"]
+	}
+	{
+		"name":"Ice Golem"
+		"unitType":"Giant"
+		"movement":2
+		"strength":20
+		"cost":200
+		"upgradesTo":"Miner"
+		"obsoleteTech":"Dig"
+		"requiredTech":"Ice Golem"
+		"uniques":["[+50]% Strength <when fighting in [Snow] tiles>", "[+25]% Strength <when fighting in [Tundra] tiles>"]
+	}
+	{
+		"name":"Giant Skeleton"
+		"unitType":"Skeleton"
+		"uniqueTo":"Bone Lands"
+		"strength":35
+		"movement":2
+		"cost":500
+		"upgradesTo":"Ram Rider"
+		"obsoleteTech":"Wild Riders"
+		"requiredTech":"Big Skeleton"
+		"uniques":["Free [Bomb] appears <upon being defeated>", "[+20]% Strength <when defending>"]
+	}
+	{
+		"name":"Ice Spirit"
+		"unitType":"Spirit"
+		"cost":200
+		"strength":20
+		"movement":2
+		"upgradesTo":"Princess"
+		"obsoleteTech":"Fire Shot's"
+		"requiredTech":"Ice Golem"
+		"uniques":["Self-destructs when attacking", "Can instantly construct a [Freeze] improvement <by consuming this unit>"]
+	}
+	//Hog Mountain 
+	{
+		"name":"Goblin Giant"
+		"unitType":"Giant"
+		"strength":35
+		"movement":2
+		"requiredTech":"Lazy Goblin"
+		"cost":400
+		"upgradesTo":"Electro Dragon"
+		"obsoleteTech":"Electric Entity's"
+		"uniques":["[2] free [Spear Goblin] units appear","[2] free [Spear Goblin] units appear <upon being defeated>"]
+	}
+	{
+		"name":"Dart Goblin"
+		"unitType":"Goblin"
+		"strength":23
+		"rangedStrength":37
+		"cost":400
+		"movement":2
+		"range":2
+		"upgradesTo":"Princess"
+		"obsoleteTech":"Fire Shot's"
+		"requiredTech":"Darts"
+		"uniques":["Invisible to non-adjacent units", "Can move after attacking", "Can only attack [All] units"]
+	}
+	{
+		"name":"Elite Barbarian"
+		"unitType":"Barbarian"
+		"strength":41
+		"cost":600
+		"movement":2
+		"upgradesTo": "Rascal Boy"
+		"obsoleteTech":"Bandit's"
+		"requiredTech":"Aggressive Offensive"
+	}
+	{
+		"name":"Golem"
+		"unitType":"Giant"
+		"strength":45
+		"cost":800
+		"movement":1
+		"upgradesTo":"Sparky"
+		"obsoleteTech":"Electric Entity's"
+		"requiredTech":"Stone Golem"
+		"uniques":["[2] free [Golemite] units appear <upon being defeated>"]
+	}
+	{
+		"name":"Golemite"
+		"unitType":"Giant"
+		"strength":30
+		"movement":2
+		//"requiredTech":"Stone Golem"
+		"uniques":["Unbuildable"]
+	}
+	{
+		"name":"X-Bow"
+		"unitType":"Siege"
+		"cost":600
+		"strength":30
+		"rangedStrength":25
+		"range":3
+		"movement":4
+		"upgradesTo":"Firecracker"
+		"obsoleteTech":"Bombs"
+		"requiredTech":"Furnace"
+		"requiredResource":"Iron"
+		"uniques":["No Sight", "Cannot attack <when fighting in [Foreign Land] tiles>", "Must set up to ranged attack", "[3] additional attacks per turn", "Cannot move <in [Foreign Land] tiles>"]
+	}
+	{
+		"name":"Zappi"
+		"unitType":"Siege"
+		"cost":450
+		"strength":25
+		"rangedStrength":30
+		"range":2
+		"movement":2
+		"upgradesTo":"Heal Spirit"
+		"obsoleteTech":"Medicinal Spirits"
+		"requiredTech":"Tesla"
+		"uniques":["[2] free [Zappi Minion] units appear"]
+	}
+	{
+		"name":"Zappi Minion"
+		"unitType":"Siege"
+		"strength":25
+		"rangedStrength":30
+		"range":2
+		"movement":2
+		//"requiredTech":"Tesla"
+		"upgradesTo":"Heal Spirit"
+		"obsoleteTech":"Medicinal Spirits"
+		"uniques":["Unbuildable"]
+	}
+	{
+		"name":"Tesla Tower"
+		"unitType":"Siege"
+		"cost":600
+		"strength":30
+		"rangedStrength":35
+		"range":3
+		"movement":2
+		"upgradesTo":"Ice Wizard"
+		"obsoleteTech":"Disaster"
+		"requiredTech":"Tesla"
+		"uniques":["No Sight", "Must set up to ranged attack", "[2] additional attacks per turn", "Invisible to non-adjacent units", "Cannot move <in [Foreign Land] tiles>"]
+	}
+	{
+		"name":"Hunter"
+		"unitType":"Gunpowder"
+		"cost":550
+		"strength":30
+		"rangedStrength":32
+		"range":2
+		"movement":2
+		"upgradesTo":"Mega Knight"
+		"obsoleteTech":"Secret Weapon"
+		"requiredTech":"Defense Line"
+		"uniques":["[+10]% Strength <when attacking> <with [50]% chance>",
+ "[+20]% Strength <when attacking> <with [35]% chance>",
+"[+30]% Strength <when attacking> <with [20]% chance>",
+"[+50]% Strength <when attacking> <with [5]% chance>"]
+	}
+	//Spooky Town
+	{
+		"name":"Princess"
+		"unitType":"Archer"
+		"strength":30
+		"rangedStrength":38
+		"range":3
+		"cost":550
+		"obsoleteTech":"Void Magic"
+		"upgradesTo":"Magic Archer"
+		"requiredTech":"Fire Shot's"
+		"movement":2
+	}
+	{
+		"name":"Electro Wizard"
+		"unitType":"Magic"
+		"strength":35
+		"rangedStrength":35
+		"cost":600
+		"range":2
+		"upgradesTo":"Night Witch"
+		"obsoleteTech":"Elixir"
+		"movement":2
+		"requiredTech":"Electric Shot's"
+		"uniques":["[1] additional attacks per turn"]
+	}
+	{
+		"name":"Miner"
+		"unitType":"Knight"
+		"strength":40
+		"cost":550
+		"movement":2
+		"requiredTech":"Dig"
+		"upgradesTo":"Bandit"
+		"obsoleteTech":"Bandit's"
+		"requiredResource":"Iron"
+		"uniques":["May Paradrop up to [6] tiles from inside friendly territory"]
+	}
+	{
+		"name":"Ram Rider"
+		"unitType":"Mounted"
+		"strength":36
+		"rangedStrength":34
+		"movement":3
+		"range":2
+		"cost":600
+		"upgradesTo":"Lumberjack"
+		"obsoleteTech":"Axes"
+		"requiredTech":"Wild Riders"
+		"requiredResource":"Animals"
+		"uniques":["[+50]% Strength <vs cities>", "Can only attack [All] units"]
+	}
+	{
+		"name":"Inferno Dragon"
+		"unitType":"Flying"
+		"strength":40
+		"rangedStrength":32
+		"movement":3
+		"range":2
+		"cost":650
+		"upgradesTo":"Bowler"
+		"obsoleteTech":"Bowling"
+		"requiredResource":"Iron"
+		"requiredTech":"Fire Shot's"
+		"uniques":["[2] additional attacks per turn"]
+	}
+	{
+		"name":"Sparky"
+		"strength":36
+		"rangedStrength":50
+		"unitType":"Siege"
+		"movement":1
+		"range":2
+		"cost":700
+		"obsoleteTech":"Axes"
+		"upgradesTo":"Executioner"
+		"requiredTech":"Electric Entity's"
+		"requiredResource":"Iron"
+		"uniques":["Must set up to ranged attack", "No Sight", "[+20]% Strength <vs cities>"]
+	}
+	{
+		"name":"Firecracker"
+		"unitType":"Gunpowder"
+		"strength":32
+		"rangedStrength":41
+		"range":2
+		"cost":550
+		"obsoleteTech":"Elixir"
+		"upgradesTo":"Night Witch"
+		"requiredTech":"Bombs"
+		"uniques":["Can see over obstacles"]
+	}
+	{
+		"name":"Wall Breaker"
+		"unitType":"Skeleton"
+		"strength":45
+		"movement":2
+		"cost":350
+		"upgradesTo":"Elixir Golem"
+		"obsoleteTech":"Elixir"
+		"requiredResource":"Coal"
+		"requiredTech":"Bombs"
+		"uniques":["Can only attack [City] units", "Can only attack [Siege] units", "Self-destructs when attacking"]
+	}
+	{
+		"name":"Ice Wizard"
+		"unitType":"Magic"
+		"strength":38
+		"rangedStrength":45
+		"cost":700
+		"range":2
+		"movement":2
+		"requiredTech":"Disaster"
+		"uniques":["[+50]% Strength <when fighting in [Snow] tiles>", "[+25]% Strength <when fighting in [Tundra] tiles>"]
+	}
+	{
+		"name":"Electro Dragon"
+		"unitType":"Flying"
+		"strength":36
+		"rangedStrength":38
+		"movement":2
+		"range":2
+		"cost":800
+		"upgradesTo":"Mother Witch"
+		"obsoleteTech":"The Power of Time"
+		"requiredTech":"Electric Entity's"
+		"uniques":["[2] additional attacks per turn", "[+33]% Strength <vs [Flying] units>"]
+	}
+	{
+		"name":"Ghost King"
+		"unitType":"Knight"
+		"strength":40
+		"cost":700
+		"upgradesTo":"Executioner"
+		"obsoleteTech":"Axes"
+		"requiredTech":"Reborn After Death"
+		"uniques":["Invisible to non-adjacent units", "[+33]% Strength <when attacking>"]
+	}
+	{
+		"name":"Phoenix"
+		"unitType":"Flying"
+		"strength":45
+		"movement":2
+		"cost":700
+		"requiredTech":"Reborn After Death"
+		"requiredResource":"Coal"
+		"upgradesTo":"Fisherman"
+		"obsoleteTech":"The Power of Time"
+		"uniques":["Consumes [1] [Animals]", "Free [Phoenix Egg] appears <upon being defeated>"]
+	}
+	//Rascals Hideout
+	{
+		"name":"Bowler"
+		"unitType":"Goblin"
+		"strength":40
+		"rangedStrength":50
+		"movement":2
+		"cost":900
+		"range":2
+		"requiredTech":"Bowling"
+		"uniques":["[+33]% Strength <vs [Siege] units>"]
+	}
+	{
+		"name":"Heal Spirit"
+		"unitType":"Spirit"
+		"cost":350
+		"movement":2
+		"requiredTech":"Medicinal Spirits"
+		"uniques":["All adjacent units heal [25] HP when healing", "[+10]% Strength bonus for [Military] units within [1] tiles", "Invisible to non-adjacent units"]
+	}
+	{
+		"name":"Electro Giant"
+		"unitType":"Siege"
+		"cost":900
+		"strength":40
+		"rangedStrength":45
+		"range":1
+		"movement":2
+		"obsoleteTech":"Hero"
+		"requiredTech":"Frankenstein"
+		"uniques":["[+100]% Strength <vs cities>"]
+	}
+	{
+		"name":"Lava Hound"
+		"unitType":"Flying"
+		"cost":900
+		"strength":45
+		"rangedStrength":35
+		"range":2
+		"movement":2
+		"requiredTech":"Frankenstein"
+		"uniques":["[3] free [Lava Pup] units appear <upon being defeated>"]
+	}
+	{
+		"name":"Lava Pup"
+		"unitType":"Flying"
+		"strength":30
+		"movement":35
+		//"requiredTech":"Frankenstein"
+		//"upgradesTo":"Bats"
+		"uniques":["Unbuildable", "[-33]% maintenance costs"]
+	}
+	{
+		"name":"Magic Archer"
+		"unitType":"Archer"
+		"strength":35
+		"rangedStrength":55
+		"movement":2
+		"range":2
+		"cost":1000
+		"requiredTech":"Magic Bow"
+		"uniques":["[+15]% Strength <vs [Land] units>"]
+	}
+	{
+		"name": "Rascal Boy"
+		"unitType":"Bandit"
+		"strength":45
+		"movement":2
+		"cost":1000
+		"requiredTech":"Bandit's"
+		"uniques":["[2] free [Rascal Girl] units appear", "Can only attack [non-[Flying]] units"]
+	}
+	{
+		"name":"Rascal Girl"
+		"unitType":"Bandit"
+		"strength":35
+		"rangedStrength":45
+		"movement":2
+		"range":2
+		"uniques":["Unbuildable", "[-50]% maintenance costs"]
+	}
+	{
+		"name":"Bandit"
+		"unitType":"Bandit"
+		"strength":40
+		"movement":3
+		"cost":900
+		"requiredTech":"Bandit's"
+		"uniques":["Withdraws before melee combat <with [33]% chance>", "Invisible to non-adjacent units", "Can move after attacking", "Can only attack [non-[Flying]] units"]
+	}
+	//Serenity Peak
+	{
+		"name":"Royal Delivery"
+		"unitType":"Knight"
+		"strength":40
+		"movement":1
+		"cost":1050
+		"requiredTech":"Mail"
+		"uniques":["May Paradrop up to [5] tiles from inside friendly territory", "Can move after attacking", "Free [Royal Recruit] appears <by consuming this unit>", "Cannot attack"]
+	}
+	{
+		"name":"Mega Knight"
+		"unitType":"Knight"
+		"strength":50
+		"movement":2
+		"cost":1100
+		"requiredTech":"Secret Weapon"
+		"uniques":["May Paradrop up to [3] tiles from inside friendly territory", "[+33]% Strength <when below [20] HP>", "Consumes [2] [Iron]"]
+	}
+	{
+		"name":"Lumberjack"
+		"unitType":"Buffer"
+		"Strength":40
+		"movement":3
+		"cost":1150
+		"requiredTech":"Axes"
+		"uniques":["[+10]% Strength bonus for [Military] units within [2] tiles", "Heals [20] damage if it kills a unit", "Free [Rage] appears <upon being defeated>"]
+	}
+	{
+		"name":"Executioner"
+		"unitType":"Bandit"
+		"strength":45
+		"rangedStrength":50
+		"cost":1100
+		"movement":2
+		"requiredTech":"Axes"
+		"uniques":["[1] additional attacks per turn"]
+	}
+	{
+		"name":"Night Witch"
+		"unitType":"Magic"
+		"uniqueTo":"Mages"
+		"cost":1000
+		"strength":50
+		"movement":2
+		"requiredTech":"Elixir"
+		"uniques":["[2] free [Bats] units appear <for all movement> <costs [+50 Gold] stats>", "Invisible to non-adjacent units"]
+	}
+	{
+		"name":"Elixir Golem"
+		"unitType":"Giant"
+		"cost":900
+		"strength":40
+		"movement":2
+		"requiredTech":"Elixir"
+		"uniques":["Gain [30]-[50] [Gold] <upon being defeated>", "[2] free [Elixir Golemite] units appear <upon being defeated>", "[+50]% Strength <vs cities>"]
+	}
+	{
+		"name":"Elixir Golemite"
+		"unitType":"Giant"
+		"strength":20
+		"movement":2
+		"uniques":["Unbuildable", "Gain [20]-[40] [Gold] <upon being defeated>", "[2] free [Elixir Stain] units appear <upon being defeated>", "[+100]% Strength <vs cities>"]
+	}
+	{
+		"name":"Elixir Stain"
+		"unitType":"Giant"
+		"strength":10
+		"movement":2
+		"uniques":["Unbuildable", "Gain [10]-[30] [Gold] <upon being defeated>", "[+200]% Strength <vs cities>"]
+	}
+	//Miner's Mine
+	{
+		"name":"Mother Witch"
+		"unitType":"Magic"
+		"cost":1000
+		"strength":38
+		"rangedStrength":49
+		"movement":2
+		"requiredTech":"The Power of Time"
+		"uniques":["Free [Royal Hog] appears <upon defeating a [All] unit>"]
+	}
+	{
+		"name":"Fisherman"
+		"unitType":"Buffer"
+		"cost":1050
+		"strength":50
+		"movement":2
+		"requiredTech":"The Power of Time"
+		"uniques":["[+100]% XP gained from combat", "Earn [5]% of killed [All] unit's [Cost] as [Culture]"]
+	}
+	{
+		"name":"Hero"
+		"unitType":"Knight"
+		"strength":60
+		"cost":1300
+		"movement":2
+		"requiredTech":"Hero"
+		"uniques":["Limited to [1] per Civilization"]
+	}
+	//Heroes
+	{
+		"name":"Goblin Machine"
+		"unitType":"Goblin"
+		"strength":50
+		"range":2
+		"movement":2
+		"rangedStrength":50
+		"cost":1300
+		"replaces":"Hero"
+		"uniqueTo":"Goblins"
+		"requiredTech":"Hero"
+		"uniques":["[+20]% Strength <vs cities>", "Limited to [1] per Civilization", "Can only attack [All] units"]
+	}
+	{
+		"name":"Skeleton King"
+		"unitType":"Skeleton"
+		"strength":55
+		"movement":2
+		"cost":1300
+		"replaces":"Hero"
+		"uniqueTo":"Bone Lands"
+		"requiredTech":"Hero"
+		"uniques":["Free [Royal Recruit] appears <upon defeating a [All] unit>", "[4] free [Royal Recruit] units appear <for all movement> <once>", "Limited to [1] per Civilization"]
+	}
+	{
+		"name":"Monk"
+		"unitType":"Buffer"
+		"replaces":"Hero"
+		"uniqueTo":"Temple of Riders"
+		"requiredTech":"Hero"
+		"strength":60
+		"movement":2
+		"cost":1000
+		"uniques":["Heal this unit by [100] HP <once>", "Limited to [1] per Civilization"]
+	}
+	{
+		"name":"Archer Queen"
+		"unitType":"Archer"
+		"replaces":"Hero"
+		"uniqueTo":"Shooters"
+		"requiredTech":"Hero"
+		"strength":50
+		"rangedStrength":65
+		"cost":1500
+		"movement":2
+		"range":2
+		"uniques":["[+33]% Strength <upon entering a Golden Age>"]
+	}
+	{
+		"name":"Little Prince"
+		"unitType":"Archer"
+		"replaces":"Hero"
+		"uniqueTo":"Red Kingdom"
+		"requiredTech":"Hero"
+		"strength":40
+		"rangedStrength":55
+		"cost":1000
+		"range":2
+		"movement":2
+		"uniques":["Free [Royal Rescue] appears <once> <for all movement>", "Limited to [1] per Civilization"]
+	}
+	{
+		"name":"Royal Rescue"
+		"unitType":"Knight"
+		"strength":60
+		"movement":2
+		"uniques":["Unbuildable", "[1] Movement <with [33]% chance>"]
+	}
+	{
+		"name":"Golden Knight"
+		"unitType":"Knight"
+		"replaces":"Hero"
+		"uniqueTo":"Blue Kingdom"
+		"requiredTech":"Hero"
+		"strength":60
+		"movement":3
+		"cost":1300
+		"uniques":["Limited to [1] per Civilization", "[1] Movement <with [33]% chance> <when attacking>", "Withdraws before melee combat <with [33]% chance>", "Can move after attacking"]
+	}
+	{
+		"name":"Mighty Miner"
+		"unitType":"Knight"
+		"replaces":"Hero"
+		"uniqueTo":"Miners"
+		"requiredTech":"Hero"
+		"strength":65
+		"rangedStrength":40
+		"movement":2
+		"range":1
+		"cost":1400
+		"uniques":["Limited to [1] per Civilization", "[3] free [Bomb] units appear <for all movement> <once>", "[2] additional attacks per turn"]
+	}
+	//Spells
+	{
+		"name":"Fireball"
+		"unitType":"Spell"
+		"uniqueTo":"Red Kingdom"
+		"movement": 1,
+		"strength": 15,
+		"rangedStrength": 15,
+		"range": 4,
+		"cost": 70,
+		"upgradesTo":"Rocket"
+		"obsoleteTech":"Rockets"
+		"requiredTech":"Fire Meteor"
+		"uniques":["Self-destructs when attacking", "Blast radius [1]"]
+	}
+	{
+		"name":"Rocket"
+		"unitType":"Spell"
+		"movement":1
+		"strength":20
+		"rangedStrength":35
+		"range":5
+		"cost":150
+		"upgradesTo":"Giant Snowball"
+		"requiredTech":"Rockets"
+		"obsoleteTech":"Snow Magic"
+		"uniques":["Self-destructs when attacking", "Blast radius [1]", "Consumes [2] [Iron]", "Consumes [1] [Coal]"]
+	}
+	{
+		"name":"Arrows"
+		"unitType":"Spell"
+		"movement": 1,
+		"strength": 8,
+		"rangedStrength": 8,
+		"range": 5,
+		"cost": 60,
+		"upgradesTo":"Zap"
+		"obsoleteTech":"Electric Potion"
+		"requiredTech":"Targets"
+		"uniques":[/*"Self-destructs when attacking",*/ "Blast radius [2]", "[2] additional attacks per turn"]
+	}
+	{
+		"name":"Goblin Barrel"
+		"unitType":"Goblin"
+		"movement": 2,
+		"strength": 10,
+		"cost": 150,
+		"requiredResource": "Iron",
+		"requiredTech":"Barrels"
+		"obsoleteTech":"Flying Apparatus"
+		"uniques":["May Paradrop up to [3] tiles from inside friendly territory", "[3] free [Goblin] units appear <by consuming this unit>", "Cannot attack"]
+	}
+	{
+		"name":"Skeleton Barrel"
+		"unitType":"Flying"
+		"movement": 2,
+		"strength": 35,
+		"cost": 450,
+		"requiredResource": "Iron",
+		"requiredTech":"Darts"
+		"upgradesTo":"Rascal Boy"
+		"obsoleteTech":"Bandit's"
+		"uniques":["Free [Guardian] appears <upon being defeated>", "[2] free [Skeleton] units appear <by consuming this unit>", "Cannot attack"]
+	}
+	{
+		"name":"Zap"
+		"unitType":"Spell"
+		"movement":1
+		"range":4
+		"strength":13
+		"rangedStrength":15
+		"cost":120
+		"upgradesTo":"Lighting"
+		"obsoleteTech":"God's Medicines"
+		"requiredTech":"Electric Potion"
+	}
+	{
+		"name":"Giant Snowball"
+		"unitType":"Spell"
+		"movement":1
+		"range":4
+		"strength":25
+		"rangedStrength":25
+		"cost":350
+		"requiredTech":"Snow Magic"
+		"upgradesTo":"Earthquake"
+		"obsoleteTech":"Disaster"
+		"uniques":["Self-destructs when attacking <when below [50] HP>"/* "Can instantly construct a [Citadel] improvement <by consuming this unit>"*/]
+	}
+	//Freeze Potion
+	//Poison
+	//Graveyard
+	{
+		"name":"Lighting"
+		"unitType":"Spell"
+		"movement":1
+		"range":5
+		"strength":20
+		"rangedStrength":30
+		"cost":350
+		"upgradesTo":"Earthquake"
+		"obsoleteTech":"Disaster"
+		"requiredTech":"God's Medicines"
+	}
+	{
+		"name":"Bomb"
+		"unitType":"Siege"
+		"strength":100
+		"uniques":["Unbuildable", "Cannot move", "No Sight", "Can only heal by pillaging", "Self-destructs when attacking", "Must set up to ranged attack"]
+	}
+	{
+		"name":"Earthquake"
+		"unitType":"Spell"
+		"movement":1
+		"strength":30
+		"rangedStrength":50
+		"range":4
+		"cost":550
+		"upgradesTo":"Void"
+		"requiredTech":"Disaster"
+	}
+	{
+		"name":"Phoenix Egg"
+		"strength":25
+		"unitType":"Siege"
+		"uniques":["Unbuildable", "Cannot move", "No Sight", "Can only heal by pillaging", "Cannot attack", "Free [Phoenix] appears <every [3] turns> <by consuming this unit> "]
+	}
+	{
+		"name":"Rage"
+		"unitType":"Buffer"
+		"strength":20
+		"cost":500
+		"uniques":["[+25]% Strength bonus for [Military] units within [2] tiles <when fighting in [Foreign Land] tiles>", "Unbuildable", "Cannot move", "No Sight", "Cannot attack", "May Paradrop up to [3] tiles from inside friendly territory"]
+	}
+	{
+		"name":"Void"
+		"unitType":"Spell"
+		"movement":1
+		"strength":100
+		"rangedStrength":100
+		"range":6
+		"cost":1000
+		"requiredTech":"Void Magic"
+		"uniques":["Self-destructs when attacking"]
+	}
+]

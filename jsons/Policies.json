@@ -1,0 +1,582 @@
+[
+    {
+        "name": "Construction",
+        "era": "Training Camp",
+        "priorities": {
+            "Neutral": 3,
+            "Cultural": 10,
+            "Diplomatic": 3,
+            "Domination": 2,
+            "Rating": 5
+        },
+        "uniques": [
+            "[+1 Production] [in all cities]",
+            "[-20]% Culture cost of natural border growth [in all cities]"
+        ],
+        "policies": [
+            {
+                "name": "Workforce",
+                "uniques": ["Free [Worker] appears", "[+25]% growth [in capital]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Collective",
+                "uniques": [
+                    "[+33]% of excess happiness converted to [Production]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Oligarchy",
+                "uniques": [
+                    "Units in cities cost no Maintenance","Enables conversion of city production to [Culture] <with a garrison>"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Protected Buildings",
+                "uniques": [
+                    "Gain a free [Tower Princess] [in all cities]", "[+1 Food, +1 Culture] [in capital]"
+                ],
+                "requires": ["Workforce"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Human Resource",
+                "uniques": [
+                    "[+2 Production, +1 Happiness] per [4] population [in capital]"
+                ],
+                "requires": ["Collective", "Oligarchy"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Construction Complete",
+                "uniques": [
+                    "[-15]% maintenance cost for buildings [in all cities]", "[-25]% construction time for [All] improvements"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Trainings",
+        "era": "Training Camp",
+        "priorities": {
+            "Neutral": 15,
+            "Cultural": 5,
+            "Diplomatic": 10,
+            "Domination": 20,
+            "Rating": 5
+        },
+        "uniques": ["[+15]% Production when constructing [Melee] units [in all cities]"],
+        "policies": [
+            {
+                "name": "Camps",
+                "uniques": [
+                    "[+1 Production] per [3] population [in all cities]", "[+5]% Production when constructing [All] buildings [in all cities]",
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Army",
+                "uniques": [
+                "[3] units cost no maintenance"
+                    "Free [Mini P.E.K.K.A] appears"
+                ],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Mobilization",
+                "uniques": [
+                    "[+33]% Production when constructing [Civilian] units [in capital]",
+                ],
+                "requires": ["Army"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Pillaging",
+                "uniques": [
+                    "Receive triple Gold from Barbarian encampments and pillaging Cities <after discovering [Pillaging]>",
+                    "Provides a [Wood Chest] in your first [2] cities for free"
+                    "Empire enters golden age"
+                ],
+                "requires": ["Camps"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Union",
+                "uniques": [
+                    "[+1 Happiness, +1 Culture] [in all cities connected to capital]",
+                    "[-15]% Unhappiness from [Population] [in all non-occupied cities] <upon declaring friendship>"
+                ],
+                "requires": ["Army"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Trainings Complete",
+                "uniques": ["Free Great Person"]
+            }
+        ]
+    },
+    {
+        "name": "Expansion",
+        "era": "Training Camp",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 10,
+            "Domination": 15,
+            "Rating": 0
+        },
+        "uniques": [
+            "[+50]% Strength <vs [Barbarian] units>",
+            "Earn [66]% of killed [Barbarian] unit's [Strength] as [Culture] <when [Rating] Victory is disabled>",
+            "Earn [33]% of killed [Barbarian] unit's [Strength] as [Science] <when [Rating] Victory is enabled>",
+            "Notified of new Barbarian encampments"
+        ],
+        "policies": [
+            {
+                "name": "Military Training",
+                "uniques": [
+                    "Free [Great General] appears", "[-15]% unhappiness from the number of cities"
+                ],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Development",
+                "uniques": [
+                    "[+50]% Golden Age length", "Quantity of strategic resources produced by the empire +[20]%"
+                ],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Military Science",
+                "uniques": [
+                    "[+66]% XP gained from combat <for [Military] units>", "Provides [2] [Iron]"
+                ],
+                //"requires": [],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Urbanization",
+                "uniques": [
+                    "[+15]% Strength for cities", "[+20]% Great Person generation [in all cities]"
+                ],
+                "requires": ["Military Science"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "Professional Army",
+                "uniques": [
+                    "[-40]% Gold cost of upgrading <for [Military] units>", "[-15]% Gold cost of acquiring tiles [in all cities]"
+                ],
+                "requires": ["Development"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Expansion Complete",
+                "uniques": [
+                    "Earn [10]% of killed [Military] unit's [Cost] as [Gold]", "Earn [10]% of killed [Military] unit's [Cost] as [Science] <when [Rating] Victory is enabled>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Big Army's",
+        "era": "Bone Pit",
+        "priorities": {
+            "Neutral": 20,
+            "Cultural": 0,
+            "Diplomatic": 10,
+            "Domination": 10,
+            "Rating": 0
+        },
+        "uniques": ["[3] free [Goblin] units appear"],
+        "policies": [
+            {
+                "name": "More Skeletons",
+                "uniques": [
+                    "Free [Valkyrie] appears", "[+20]% Production when constructing [Skeleton] units [in all cities]"
+                ],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "More Goblins",
+                "uniques": [
+                    "Free [Goblin Barrel] appears", "[+20]% Production when constructing [Goblin] units [in all cities]"
+                ],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Exquisite Burials",
+                "uniques": [
+                    "[2] Happiness from each type of luxury resource", "May buy [Skeleton] units with [Culture] [in all cities]"
+                ],
+                "requires": ["More Skeletons"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Raids",
+                "uniques": [
+                    "No movement cost to pillage <for [Skeleton] units>", "Provides [2] [Animals]"
+                ],
+                "requires": ["More Goblins"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Barter",
+                "requires": ["Raids", "Exquisite Burials"],
+                "uniques": [
+                    "[+1 Gold] from every [Trading post]"
+                    "[+5 Gold] [in capital]"
+                ],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "Big Army's Complete",
+                "uniques": [
+                    "Provides a [Goblin Hut] in your first [3] cities for free",
+                    "Provides a [Tombstone] in your first [3] cities for free",
+                    "Free Technology"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Commerce",
+        "era": "Barbarian Bowl",
+        "priorities": {
+            "Neutral": 10,
+            "Cultural": 15,
+            "Diplomatic": 15,
+            "Domination": 10,
+            "Rating": 15
+        },
+        "uniques": ["[+15]% [Gold] [in capital]", "[+1 Gold] [in all cities]"],
+        "policies": [
+            {
+                "name": "Naval Tradition",
+                "uniques": [
+                	"[+3 Culture] [in capital]"
+                    "Free [Great General] appears"
+                ],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Water Culture",
+                "uniques": [
+                    //"[+1 Gold] from every [Harbor]",
+                    "[+2 Gold, +2 Culture] from every [Harbor]"
+                    "[+1 Culture] from every [Statue]"
+                ],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Property Protection",
+                "uniques": ["Free [Mega Minion] appears", "Free [Guardian] appears <starting from the [Royal Arena]>"],
+                "requires": ["Naval Tradition"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Financial Literacy",
+                "uniques": [
+                    "[Gold] cost of purchasing items in cities [-25]%",
+                    "[+10]% [Science] [in all cities] <when [Rating] Victory is enabled>", "[+10]% [Culture] [in all cities] <when [Rating] Victory is disabled>"
+                ],
+                "requires": ["Water Culture"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Mining of Minerals",
+                "uniques": ["Gain a free [Gem Mine] [in capital]"],
+                "requires": ["Financial Literacy", "Property Protection"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "Commerce Complete",
+                "uniques": [
+                    "[+1 Gold] from every [Trading post]",
+                    "[+3 Happiness, +2 Gold, +2 Culture]"
+                    ]
+            }
+        ]
+    },
+    {
+        "name": "Learning Magic",
+        "era": "Spell Valley",
+        "priorities": {
+            "Neutral": 10,
+            "Cultural": 20,
+            "Diplomatic": 5,
+            "Domination": 15,
+            "Rating": 20
+        },
+        "uniques": [
+            "[+33]% Production when constructing [Magic] units [in all cities]", "[+15]% Production when constructing [Spell] units [in all cities]"
+        ],
+        "policies": [
+            {
+                "name": "Potential",
+                "uniques": [
+                    "[+1 Science] per [3] population [in all cities] <when [Rating] Victory is disabled>", "[+1 Gold] per [5] population [in all cities] <when [Rating] Victory is enabled>", "All newly-trained [Magic] units [in capital] receive the [Accuracy I] promotion", "All newly-trained [Spell] units [in capital] receive the [Ignore of Damage] promotion"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Holidays",
+                "uniques": [
+                    "[+1 Culture, +1 Happiness] from every [Wood Chest]",
+                    "[+1 Culture, +1 Happiness] from every [Silver Chest]",
+                    "[+1 Culture, +1 Happiness] from every [Golden Chest]",
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Trading Methods",
+                "uniques": [
+                    "[+1 Science] from every [Trading post] <when [Rating] Victory is disabled>", "[+1 Gold] from every [Trading post] <when [Rating] Victory is enabled>",
+                    "Free [Witch] appears"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Greater Profit",
+                "uniques": ["[+1 Gold] from all [Gold] buildings"],
+                "requires": ["Trading Methods"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Ancient Culture",
+                "uniques": ["[+1 Culture] [in all cities]", "Gain a free [Water Mill] [in capital]"],
+                "requires": ["Greater Profit"],
+                "row": 3,
+                "column": 5
+            },
+            {
+                "name": "Learning Magic Complete",
+                "uniques": [
+                    "[2] free [Witch] units appear", "[+5 Science] [in capital] <when [Rating] Victory is disabled>"]
+            }
+        ]
+    },
+    {
+        "name": "Towers",
+        "era": "Frozen Peak",
+        "priorities": {
+            "Neutral": 50,
+            "Cultural": 50,
+            "Diplomatic": 50,
+            "Domination": 40,
+            "Rating": 50
+        },
+        "uniques": [
+            "[+35]% Production when constructing [Siege] units [in all cities]",
+        ],
+        "policies": [
+            {
+                "name": "Correct Styling",
+                "uniques": ["[+1 Culture, +1 Gold, +1 Production, +1 Science] from every [Walls]"],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Agricultural Buildings",
+                "uniques": ["[+15]% Strength for cities <when defending>", "[+15]% growth [in all cities]"],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Detours",
+                "uniques": [
+                    "[+1 Happiness] [in all cities]", "[3] units cost no maintenance"
+                ],
+                "requires": ["Agricultural Buildings", "Correct Styling"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Information War",
+                "uniques": [
+                    "[+1 Gold, +1 Culture] in cities on [Mountain] tiles"
+                ],
+                "requires":["Agricultural Buildings"]
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Unicums",
+                "uniques": ["[+1 Happiness, +2 Production] per [8] population [in all cities]"],
+                "requires":["Information War", "Detours"]
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "Towers Complete",
+                "uniques": [
+                	"Free [Tesla Tower] appears <after discovering [Tesla]>"
+                    "[+20]% Strength <for [Siege] units>",
+                    "[+50]% Golden Age length"]
+            }
+        ]
+    },
+    {
+        "name": "Deception",
+        "era": "Hog Mountain",
+        "priorities": {
+            "Neutral": 50,
+            "Cultural": 40,
+            "Diplomatic": 40,
+            "Domination": 50,
+            "Rating": 40
+        },
+        "uniques": [
+            "[-33]% maintenance costs <for [All] units>",
+        ],
+        "policies": [
+            {
+                "name": "To the Last",
+                "uniques": ["[+25]% Strength <for [Wounded] units> <when attacking>", "Gain a free [Cannonner] [in capital]", "Gain a free [Dugger Duchess] [in capital]"],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Militarism",
+                "uniques": ["[Gold] cost of purchasing [All] units [-33]%", "[+10]% Strength for cities"],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Intelligence",
+                "uniques": [
+                    "Quantity of strategic resources produced by the empire +[33]%", "[1] Movement <for [Flying] units>"
+                ],
+                "requires": ["To the Last", "Militarism"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Loan",
+                "uniques": [
+                    "Earn [3]% of the damage done to [City] units as [Gold]",
+                    "[+50]% Production when constructing [Sauna] buildings [in all cities]",
+                    "[-25]% enemy spy effectiveness [in all cities]"
+                ],
+                "requires": ["Militarism"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Total War",
+                "uniques": [
+                    "New [Military] units start with [5] Experience [in all cities]", "[+33]% XP gained from combat"
+                ],
+                "requires": ["Militarism"],
+                "row": 2
+                "column": 5
+            },
+            {
+                "name": "Deception Complete",
+                "uniques": [
+                "[-20]% unhappiness from the number of cities", "[+3 Happiness, +3 Culture]"
+                    ]
+            }
+        ]
+    },
+    {
+        "name": "Illegal",
+        "era": "Rascal's Hideout",
+        "priorities": {
+            "Neutral": 50,
+            "Cultural": 40,
+            "Diplomatic": 50,
+            "Domination": 40,
+            "Rating": 50
+        },
+        "uniques": [
+            "[+25]% Production when constructing [Bandit] units [in all cities]",
+            "[+25]% Production when constructing [Buffer] units [in all cities]",
+        ],
+        "policies": [
+            {
+                "name": "Development Benefits",
+                "uniques": [
+                    "[+15]% [Production] [in all cities]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Planned Economy",
+                "uniques": [
+                    "[+25]% [Science] from every [Spell Factory] <when [Rating] Victory is disabled>", "[+10]% [Gold] from every [Spell Factory] <when [Rating] Victory is enabled>",
+                    "[+1 Happiness, +1 Culture, +1 Production, +3 Science] from every [Golden Chest]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Fertilizers",
+                "uniques": [
+                    "[+1 Happiness] from [Plantation] tiles [in all cities]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Espionage",
+                "requires": ["Development Benefits", "Planned Economy", "Fertilizers"],
+                "uniques": [
+                "[+15]% Golden Age length",
+                    "New spies start with [2] level(s)"
+                ],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Preparation",
+                "requires": ["Espionage"],
+                "uniques": [
+                    "[+20]% Strength <for [Bandit] units>",
+                    "[+20]% Strength <for [Mounted] units>",
+                    "[+20]% Strength <for [Buffer] units>"
+                ],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "Illegal Complete",
+                "uniques": [
+                    "[+3 Food, +1 Production] [in all cities]", "[-33]% maintenance cost for buildings [in all cities]"]
+            }
+        ]
+    }
+]

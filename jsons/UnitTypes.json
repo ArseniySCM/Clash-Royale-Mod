@@ -1,0 +1,88 @@
+[
+    {
+        "name": "Civilian",
+        "movementType": "Land"
+    },
+    {
+        "name": "Knight",
+        "movementType": "Land"
+        "uniques":["Can only attack [non-[Flying]] units"]
+    },
+    {
+        "name": "Goblin",
+        "movementType": "Land"
+        "uniques":["Can only attack [non-[Flying]] units"]
+    },
+    {
+        "name": "Skeleton",
+        "movementType": "Land"
+        "uniques":["Can only attack [non-[Flying]] units"]
+    },
+    {
+        "name": "Giant",
+        "movementType": "Land"
+        "uniques":["Can only attack [City] units", "Can only attack [Siege] units"]
+    },
+    {
+        "name": "Barbarian",
+        "movementType": "Land"
+        "uniques":["Can only attack [non-[Flying]] units"]
+    },
+    {
+        "name": "Spell",
+        "movementType": "Air"
+        "uniques":["[-50]% Strength <vs cities> <when attacking>"]
+    },
+    {
+        "name": "Archer",
+        "movementType": "Land"
+    },
+    {
+        "name": "Water",
+        "movementType": "Water"
+    },
+    {
+        "name": "Mounted",
+        "movementType": "Land"
+        "uniques":["Can only attack [non-[Flying]] units"]
+    },
+    {
+        "name": "Gunpowder",
+        "movementType": "Land"
+    },
+    {
+        "name": "Flying",
+        "movementType": "Land",
+        "uniques":["All tiles cost 1 movement", "May travel on Water tiles without embarking"]
+    },
+    {
+        "name": "Spirit",
+        "movementType": "Land",
+    },
+    {
+        "name": "Magic",
+        "movementType": "Land",
+    },
+    {
+        "name": "Siege",
+        "movementType": "Land",
+    },
+    {
+        "name": "Melee",
+        "movementType": "Land"
+        "uniques":["Can only attack [non-[Flying]] units"]
+    },
+    {
+        "name": "Ranged",
+        "movementType": "Land"
+    },
+    {
+        "name": "Bandit",
+        "movementType": "Land"
+    },
+    {
+        "name": "Buffer",
+        "movementType": "Land"
+        "uniques":["Can only attack [non-[Flying]] units"]
+    },
+]

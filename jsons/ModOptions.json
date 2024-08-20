@@ -1,0 +1,5 @@
+{
+    "isBaseRuleset": true,
+    "uniques": ["Disable religion"],
+    "constants":{"maxXPfromBarbarians":35, "cityStrengthBase":2, "cityStrengthPerPop":0.5, "minimumWarDuration":15}
+}

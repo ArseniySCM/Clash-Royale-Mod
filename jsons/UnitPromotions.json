@@ -1,0 +1,206 @@
+[
+	{
+		"name": "Heal Instantly",
+		"uniques": ["Heal this unit by [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes": ["Knight","Flying","Goblin","Skeleton","Giant","Barbarian","Archer","Mounted", "Magic", "Buffer", "Bandit", "Siege"],
+        "row": 0,
+        "column": 0
+    },
+    //Range, Flying
+    {
+		"name": "Accuracy I",
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"unitTypes": ["Siege","Archer","Gunpowder", "Magic", "Flying"],
+        "column": 1,
+        "row": 1
+    },
+	{
+		"name": "Accuracy II",
+		"prerequisites": ["Accuracy I"],
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"unitTypes": ["Siege","Archer","Gunpowder", "Magic", "Flying"],
+        "column": 1,
+        "row": 2
+    },
+	{
+		"name": "Accuracy III",
+		"prerequisites": ["Accuracy II"],
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"unitTypes": ["Siege","Archer","Gunpowder", "Magic", /*"Flying"*/],
+        "column": 1,
+        "row": 3
+    },
+    {
+		"name": "Barrage I",
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"unitTypes": ["Siege","Archer","Gunpowder", "Magic", "Flying"],
+        "column": 2,
+        "row": 1
+	},
+	{
+		"name": "Barrage II",
+		"prerequisites": ["Barrage I"],
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"unitTypes": ["Siege","Archer","Gunpowder", "Magic", "Flying"],
+        "column": 2,
+        "row": 2
+	},
+	{
+		"name": "Barrage III",
+		"prerequisites": ["Barrage II"],
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"unitTypes": ["Siege","Archer","Gunpowder", "Magic", /*"Flying"*/],
+        "column": 2,
+        "row": 3
+	},
+	{
+		"name": "Volley",
+		"prerequisites": ["Accuracy I","Barrage I"],
+		"uniques": ["[+50]% Strength <vs cities>"],
+		"unitTypes": ["Siege"],
+        "column": 3,
+        "row": 1
+	},
+	//Melee
+	{
+		"name": "Shock I",
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": ["Knight","Goblin","Skeleton","Barbarian", "Mounted", "Bandit"],
+        "column": 4,
+        "row": 1
+	},
+	{
+		"name": "Shock II",
+		"prerequisites": ["Shock I"],
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": ["Knight","Goblin","Skeleton","Barbarian", "Mounted", "Bandit"],
+        "column": 4,
+        "row": 2
+	},
+	{
+		"name": "Shock III",
+		"prerequisites": ["Shock II"],
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": ["Knight","Goblin","Skeleton","Barbarian", "Mounted", "Bandit"],
+        "column": 4,
+        "row": 3
+	},
+
+	{
+		"name": "Drill I",
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Knight","Goblin","Skeleton","Barbarian", "Mounted", "Bandit"],
+        "column": 5,
+        "row": 1
+	},
+	{
+		"name": "Drill II",
+		"prerequisites": ["Drill I"],
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Knight","Goblin","Skeleton","Barbarian", "Mounted", "Bandit"],
+        "column": 5,
+        "row": 2
+	},
+	{
+		"name": "Drill III",
+		"prerequisites": ["Drill II"],
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Knight","Goblin","Skeleton","Barbarian", "Mounted", "Bandit"],
+        "column": 5,
+        "row": 3
+	},
+	{
+		"name": "Charge",
+		"prerequisites": ["Shock II","Drill II"],
+		"uniques": ["[+33]% Strength <vs [Wounded] units>"],
+		"unitTypes": ["Mounted","Barbarian", "Bandit"],
+        "column": 6,
+        "row": 2
+	},
+	{
+		"name": "Blitz",
+		"prerequisites": ["Shock III","Drill III"],
+		"uniques": ["[1] additional attacks per turn"],
+		"unitTypes": ["Knight","Giant","Mounted","Bandit"],
+        "column": 6,
+        "row": 4
+	},
+	{
+		"name":"Wings"
+		"prerequisites": ["Accuracy I","Barrage I"],
+		"uniques":["[+1] Movement"]
+		"unitTypes":["Flying"]
+		"column": 7,
+        "row": 2
+	}
+	{
+		"name": "Woodsman",
+		"prerequisites": ["Shock III","Drill III"],
+		"uniques": ["Double movement in [Forest]","Double movement in [Jungle]"],
+		"unitTypes": ["Buffer","Bandit", "Mounted"],
+        "column": 6,
+        "row": 5
+	},
+	//Mixed
+	{
+		"name": "Cover I",
+		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+		"unitTypes": ["Knight","Gunpowder","Archer","Flying","Siege", "Giant", "Skeleton", "Goblin"],
+        "column": 24,
+        "row": 1
+	},
+	{
+		"name": "Cover II",
+		"prerequisites": ["Cover I"],
+		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+		"unitTypes": ["Knight","Gunpowder","Archer","Flying","Siege", "Giant", "Skeleton", "Goblin"],
+        "column": 24,
+        "row": 2
+	},
+	{
+		"name": "Sentry",
+		"prerequisites": ["Accuracy I","Barrage I","Shock II","Drill II"],
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Knight","Gunpowder","Mounted","Bandit","Flying","Magic"],
+        "column": 24,
+        "row": 4
+	},
+	{
+		"name": "Amphibious",
+		"prerequisites": ["Shock I", "Drill I"],
+		"uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"],
+		"unitTypes": ["Knight","Mounted", "Bandit", "Barbarian", "Skeleton", "Goblin"],
+        "column": 6,
+        "row": 1
+	},
+	{
+		"name": "Regeneration I",
+		"prerequisites": ["Accuracy II","Barrage II","Shock III","Drill III"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes": ["Knight","Gunpowder","Archer","Skeleton","Siege","Mounted", "Buffer", "Spell", "Goblin", "Flying", "Spirit", "Magic", "Bandit"],
+        "column": 10,
+        "row": 3
+	},
+	{
+		"name": "Regeneration II",
+		"uniques": ["[+20] HP when healing"]
+		"prerequisites":["Regeneration I"]
+		"unitTypes": ["Knight","Gunpowder","Archer","Skeleton","Siege","Mounted", "Buffer", "Spell", "Goblin", "Flying", "Spirit", "Magic", "Bandit"],
+        "column": 10,
+        "row": 4
+	},
+	{
+		"name":"Ignore of Damage"
+		"uniques":["No damage penalty for wounded units"]
+		"unitTypes":["Flying"]
+		"column":11
+		"row":1
+	}
+	{
+		"name":"Tacticus"
+		"uniques":["[+50]% to Flank Attack bonuses"]
+		"unitTypes":["Flying", "Knight", "Skeleton", "Goblin", "Barbarian"]
+		"column":12
+		"row":1
+	}
+]

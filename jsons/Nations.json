@@ -1,0 +1,198 @@
+[
+	{
+		"name": "Spectator",
+		"outerColor": [255,255,255],
+//		"innerColor": [255,255,255]
+	},
+	{
+		"name": "Goblins",
+		"leaderName": "Goblin King VI",
+		"adjective": ["Goblinian"],
+		"startBias": ["Avoid [Tundra]", "Avoid [Snow]"],
+		"preferredVictoryType": "Domination",
+		
+		"startIntroPart1":"Hiē, je gobla kin. Yu polk ay gobli"
+		"startIntroPart2":""
+		"declaringWar":"Yu veri glut. Wiē declur wīr"
+		"attacked":"Yu veri eaď hìmà"
+		"defeated":"Wiē gĵf ay stëř"
+		"introduction":"Yuř mîm ęŋ hĵr plet"
+		
+		"outerColor": [20, 150, 47],
+		"innerColor": [161, 250, 255],
+		
+		"cities":["Geblĕ", "Gebĩn", "Greġno", "Garĝo", "Gatiniese", "Gnarah", "Gĕrmå", "Gažio", "Gríšô", "Garzie", "Giŕ", "Nolŧŷ", "Qtrěa", "Ĵťggiň", "Ĝurĩashè", "Ļerghy", "New-Gloñ"]
+		"uniques":["[+20]% Production when constructing [Goblin] units [in all cities]"]
+	}
+	
+	{
+		"name":"Bone Lands"
+		"leaderName": "Reaper",
+		"adjective": ["Skeletal"],
+		"startBias":["Desert"]
+		"preferredVictoryType": "Rating",
+		
+		"startIntroPart1":"We are warriors of death, and you are one of us"
+		"startIntroPart2":""
+		"declaringWar":"Death does not pass anyone by"
+		"attacked":"Only the brave or the fool can attack the dead!"
+		"defeated":"You were able to kill the dead....."
+		"introduction":"We are an army of bones, we welcome you"
+		
+		"outerColor": [139, 139, 139],
+		"innerColor": [255, 255, 255],
+		
+		"cities":["Big-Bone", "New-Skull", "Death-city", "Great-Bone", "Spirit city", "Cemetery", "Grave", "City from Bones", "Swamp of Dead", "Extreme Mountain", "Shrine", "Temple", "Crypt", "Underground-City"]
+		"uniques":["[+20]% Production when constructing [Skeleton] units [in all cities]"]
+	}
+	{
+		"name":"Blue Kingdom"
+		"leaderName": "Blue King",
+		"adjective": ["Royal"],
+		"startBias":["Grassland"]
+		"preferredVictoryType": "Neutral",
+		
+		"startIntroPart1":"Your mission — destroy Red Kingdon"
+		"startIntroPart2":""
+		"declaringWar":"We declare war"
+		"attacked":"I will give everything not to lose!"
+		"defeated":"I tried, but you are stronger..."
+		"introduction":"Nice to meet you, I'm the king of the Red Kingdom"
+		
+		"innerColor": [9, 25, 105],
+		"outerColor": [64, 96, 255],
+		
+		"cities":["Blue Castle", "Blue Left Tower", "Blue Right Tower", "Central tower", "Linden", "Bogtol", "Liverblue", "Royal Home", "Hi-hi-hi-Ho", "Clash-Blue", "Blue Clan Home", "Blueter-City", "Bluenburg"]
+		"uniques":["[+20]% Production when constructing [Knight] units [in all cities]"]
+	}
+	{
+		"name":"Red Kingdom"
+		"leaderName": "Red King",
+		"adjective": ["Royal"],
+		"startBias":["Grassland"]
+		"preferredVictoryType": "Domination",
+		
+		"startIntroPart1":"Your mission — destroy Blue Kingdon"
+		"startIntroPart2":""
+		"declaringWar":"We declare war"
+		"attacked":"I will give everything not to lose!"
+		"defeated":"I tried, but you are stronger..."
+		"introduction":"Nice to meet you, I'm the king of the Blue Kingdom"
+		
+		"outerColor": [255, 0, 0],
+		"innerColor": [100, 0, 0],
+		
+		"cities":["Red Castle", "Red Left Tower", "Red Right Tower", "Front tower", "Risk", "Rekin", "Mored", "Redunia", "Uauaau", "Clash-Red", "Red Clan Home", "Reder-City", "Redinberg"]
+		"uniques":["[+20]% Production when constructing [Giant] units [in all cities]"]
+	}
+	{
+		"name":"Temple of Riders"
+		"leaderName": "Monk",
+		"adjective": ["Riderian"],
+		"startBias":["Mountain"]
+		"preferredVictoryType": "Cultural",
+		
+		"startIntroPart1":"We are boar riders"
+		"startIntroPart2":""
+		"declaringWar":"We had no choice"
+		"attacked":"Looks like we couldn't come to an agreement."
+		"defeated":"I'm sorry, you won."
+		"introduction":"We will hope for a peaceful existence"
+		
+		"outerColor": [155, 106, 170],
+		"innerColor": [255, 218, 139],
+		
+		"cities":["Main Mountain", "Monk-City", "Hogwille", "Hog Mountain", "Holy Land", "Rider Mountain", "Center of Spirituality", "City of Ancestors", "City of Descendants", "New-Mountain", "Ancient Catacombs", "Among the Heavens", "Great Valley", "Glory Valley"]
+		"uniques":["[+20]% Production when constructing [Mounted] units [in all cities]"]
+	}
+	{
+		"name":"Shooters"
+		"leaderName":"Archer Queen"
+		"adjective":["Ranger"]
+		"startBias":["Grassland"]
+		"preferredVictoryType":"Domination"
+		
+		"startIntroPart1":"We are the royal archers. And you are our ruler"
+		"startIntroPart2":""
+		"declaringWar":"You didn't fit the most ideals"
+		"attacked":"The whole kingdom will be against you"
+		"defeated":"We couldn't. But your hideous empire will be erased one day"
+		"introduction":"We are peaceful shooters. We wish everyone peace"
+		
+		"outerColor": [108, 29, 26],
+		"innerColor": [40, 154, 57],
+		
+		"cities":["King's palace", "Metropolitan City", "Target camp", "Observatory", "Watchtower", "Training Center", "Archruzh", "Bowtown","Arrowwood", "Stringhold", "Archer's Haven", "Precision Peak", "Arrowdale", "Longbow Glen", "Sharpwood", "Distant Quiver", "Arrowfield"]
+		"uniques":["[+20]% Production when constructing [Archer] units [in all cities]", "[+20]% Production when constructing [Gunpowder] units [in all cities]"]
+	}
+	{
+		"name":"Miners"
+		"leaderName":"Mighty Miner"
+		"adjective":["Digger"]
+		"startBias":["Hill"]
+		"preferredVictoryType":"Neutral"
+		
+		"startIntroPart1":"We love drilling, come with us!"
+		"startIntroPart2":""
+		"declaringWar":"Let our drills drill your heads"
+		"attacked":"All we wanted was a peaceful existence..."
+		"defeated":"We worked for others... and you destroyed this work..."
+		"introduction":"We are old miners. Let's live together"
+		
+		"outerColor": [222, 255, 60],
+		"innerColor": [138, 111, 191],
+		
+		"cities":["Minerville", "Stone City", "Rockridge", "Pickaxe Peak", "Drillsberg", "Coalridge", "Oreborough", "Deepcave", "Quarrytown", "Rockhaven", "Miners' Hollow" , "Ironvale", "Goldshaft", "Minetown", "Gravelburg", "Shaftsville", "Cavecrest", "Miner's Rest", "Stonemount", "Pitfall", "Silverhollow", "Diggerton"]
+		"uniques":["[+20]% Production when constructing [Buffer] units [in all cities]"]
+	}
+	{
+		"name":"Mages"
+		"leaderName":"Great Mage"
+		"adjective":["Magican"]
+		"startBias":["Plains"]
+		"preferredVictoryType":"Rating"
+		
+		"startIntroPart1":"Espectro Patronum!!!!"
+		"startIntroPart2":""
+		"declaringWar":"Everyone who stands in the way of magicians will be destroyed!"
+		"attacked":"Great magicians never lose."
+		"defeated":"It seems we lost, but not for long."
+		"introduction":"Magical blood flows in our veins!"
+		
+		"outerColor": [185, 80, 237],
+		"innerColor": [202, 250, 93],
+		
+		"cities":["Hidden City", "Mageville", "Spella", "Mage Tower", "Great Mount", "Migafir", "Hidden in the fog", "Hidden in the leaves", "Hidden in the sand", "Wind-city", "Ancient altar", "Spellhaven", "Mysticburg", "Enchanter's Isle", "Arcane City", "Wizard's Peak", "Magewood", "Sorcerer's Cove", "Charmstone", "Runevale", "Magicspire"]
+		"uniques":["[+20]% Production when constructing [Magic] units [in all cities]", "[+20]% Production when constructing [Spell] units [in all cities]"]
+	}
+	{
+		"name":"Village of Builder"
+		"leaderName":"Main Builder"
+		"adjective":["Builderian"]
+		"startBias":["Grassland"]
+		"preferredVictoryType":"Cultural"
+		
+		"startIntroPart1":"We have been building structures for centuries, and we will build our civilization!"
+		"startIntroPart2":""
+		"declaringWar":"'We will build new settlements on the corpse of your civilization"
+		"attacked":"Our sporks are unbreakable!"
+		"defeated":"An error was made in our drawings..."
+		"introduction":"We love to build"
+		
+		"outerColor": [73, 52, 24],
+		"innerColor": [182, 116, 23],
+		
+		"cities":["Buildtown", "Constructville", "Brickstone", "Hammerhold", "Mason's Peak", "Architect's Haven", "Blueprint Bay", "Timberland", "Structure City", "Craftsman's Cove", "Builder's Workshop", "Builder Hall", "Great Build"]
+		
+		"uniques":["[+10]% [Production] [in all cities] <starting from the [Builder's Workshop]>", "Free [Worker] appears"]
+	}
+	
+	{
+		"name": "Barbarians",
+		"outerColor": [0,0,0],
+        "innerColor": [185,12,12],
+		"uniques": ["Can only heal by pillaging", "Excluded from map editor"/*,
+			"[Water] units gain the [Unable to pillage tiles] promotion"*/]
+		"uniques":["[+15]% Strength <for [Barbarian] units>"]
+	}
+]

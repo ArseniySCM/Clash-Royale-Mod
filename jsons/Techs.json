@@ -1,0 +1,560 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "Training Camp",
+		"techCost": 30,
+		"buildingCost": 40,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Training of Units",
+				"row": 6,
+				"quote": "'",
+				"uniques": ["Starting tech"]
+			}
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "Training Camp",
+		"techCost": 50,
+		"buildingCost": 50,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Fire Meteor",
+				"row": 1,
+				"quote": "'",
+				"prerequisites":["Training of Units"]
+			}
+			{
+				"name": "Knights Codex",
+				"row": 3,
+				"quote": "'",
+				"prerequisites":["Training of Units"]
+			}
+			{
+				"name": "Targets",
+				"row": 6,
+				"quote": "'",
+				"prerequisites":["Training of Units"]
+			}
+			{
+				"name": "Destroy Power",
+				"row": 8,
+				"prerequisites":["Training of Units"],
+			}
+		]
+	},
+	{
+		"columnNumber": 2,
+		"era": "Training Camp",
+		"techCost": 70,
+		"buildingCost": 75,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Robotic Construction",
+				"row": 3,
+				"quote": "'",
+				"prerequisites":["Knights Codex"]
+			}
+			{
+				"name": "Musketeers",
+				"row": 5,
+				"quote": "'",
+				"prerequisites":["Targets"]
+			}
+			{
+				"name": "Minions",
+				"row": 7,
+				"quote": "'",
+				"prerequisites":["Targets", "Destroy Power"]
+			}
+		]
+	},
+	{
+		"columnNumber": 3,
+		"era": "Goblin Stadium",
+		"techCost": 100,
+		"buildingCost": 100,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Barrels"
+				"row":1
+				"quote":""
+				"prerequisites":["Fire Meteor"]
+				"uniques": ["Enables embarkation for land units"],
+			}
+			{
+				"name": "Training of Goblins",
+				"row": 4,
+				"quote": "'",
+				"prerequisites":["Robotic Construction", "Musketeers"]
+			}
+			{
+				"name": "Riding on Hogs",
+				"row": 7,
+				"quote": "'",
+				"prerequisites":["Minions", "Minions"]
+			}
+			{
+				"name": "Pillaging",
+				"row": 8,
+				"quote": "'",
+				"prerequisites":["Minions"]
+				"uniques":["Enables conversion of city production to [Gold]"]
+			}
+		]
+	}
+	{
+		"columnNumber": 4,
+		"era": "Bone Pit",
+		"techCost": 130,
+		"buildingCost": 150,
+		"wonderCost": 185,
+		"techs": [
+			
+			{
+				"name":"Dead Army"
+				"row":5
+				"quote":""
+				"prerequisites":["Riding on Hogs", "Training of Goblins"]
+			}
+			{
+				"name":"Gunpowder"
+				"row":4
+				"quote":""
+				"prerequisites":["Training of Goblins"]
+			}
+			{
+				"name":"Great Warriors"
+				"row":8
+				"quote":""
+				"prerequisites":["Pillaging", "Riding on Hogs"]
+			}
+		]
+	}
+	{
+		"columnNumber": 5,
+		"era": "Bone Pit",
+		"techCost": 170,
+		"buildingCost": 180,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Burial Place"
+				"row":1
+				"quote":""
+				"prerequisites":["Barrels", "Gunpowder"]
+				"uniques": ["Enables conversion of city production to [Science]" /*, "Enables Research agreements" */]
+			}
+			{
+				"name":"Flying Skeletons"
+				"row":6
+				"quote":""
+				"prerequisites":["Great Warriors", "Gunpowder"]
+			}
+		]
+	}
+	{
+		"columnNumber": 6,
+		"era": "Barbarian Bowl",
+		"techCost": 210,
+		"buildingCost": 220,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Iron Barrels"
+				"row":1
+				"prerequisites":["Burial Place"]
+			}
+			{
+				"name":"Battle Ram"
+				"row":2
+				"prerequisites":["Burial Place"]
+			}
+			{
+				"name":"Barbarians"
+				"row":5
+				"prerequisites":["Dead Army"]
+			}
+			{
+				"name":"Mega Minion"
+				"row":6
+				"prerequisites":["Flying Skeletons"]
+			}
+		]
+	}
+	{
+		"columnNumber": 7,
+		"era": "Spell Valley",
+		"techCost": 260,
+		"buildingCost": 300,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Fire Magic"
+				"row":1
+				"prerequisites":["Iron Barrels"]
+			}
+			{
+				"name":"Towers"
+				"row":2
+				"prerequisites":["Battle Ram"]
+			}
+			{
+				"name":"Electric Magic"
+				"row":5
+				"prerequisites":["Barbarians"]
+			}
+		]
+	}
+	{
+		"columnNumber": 8,
+		"era": "Builder's Workshop",
+		"techCost": 310,
+		"buildingCost": 360,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Rockets"
+				"row":1
+				"prerequisites":["Fire Magic"]
+			}
+			{
+				"name":"Powerful Buildings"
+				"row":2
+				"prerequisites":["Towers", "Fire Magic"]
+			}
+			{
+				"name":"Flying Bats"
+				"row":4
+				"prerequisites":["Electric Magic"]
+			}
+			{
+				"name":"Electric Potion"
+				"row":5
+				"prerequisites":["Electric Magic"]
+			}
+			{
+				"name":"Flying Apparatus"
+				"row":6
+				"prerequisites":["Electric Magic", "Mega Minion"]
+			}
+		]
+	}
+	{
+		"columnNumber": 9,
+		"era": "Royal Arena",
+		"techCost": 370,
+		"buildingCost": 420,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Guard"
+				"row":2
+				"prerequisites":["Rockets", "Powerful Buildings"]
+				"uniques": ["Enables Defensive Pacts"],
+			}
+			{
+				"name":"Witches"
+				"row":4
+				"prerequisites":["Flying Bats", "Electric Potion"]
+			}
+			{
+				"name":"Magic Steel"
+				"row":5
+				"prerequisites":["Electric Potion"]
+			}
+			{
+				"name":"Real Dragon"
+				"row":6
+				"prerequisites":["Electric Potion", "Flying Apparatus"]
+			}
+		]
+	}
+	{
+		"columnNumber": 10,
+		"era": "Royal Arena",
+		"techCost": 430,
+		"buildingCost": 485,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Royal Knights"
+				"row":1
+				"prerequisites":["Guard"]
+			}
+			{
+				"name":"Royal Guard"
+				"row":2
+				"prerequisites":["Guard"]
+			}
+			{
+				"name":"Royal Hogs"
+				"row":3
+				"prerequisites":["Guard"]
+			}
+			{
+				"name":"Three Musketers"
+				"row":4
+				"prerequisites":["Witches"]
+			}
+			{
+				"name":"Big Walls"
+				"row":6
+				"prerequisites":["Magic Steel", "Real Dragon"]
+			}
+		]
+	}
+	{
+		"columnNumber": 11,
+		"era": "Frozen Peak",
+		"techCost": 500,
+		"buildingCost": 525,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"God's Medicines"
+				"row":2
+				"prerequisites":["Royal Knights", "Royal Guard"]
+			}
+			{
+				"name":"Big Skeleton"
+				"row":6
+				"prerequisites":["Big Walls"]
+			}
+			{
+				"name":"Ice Golem"
+				"row":3
+				"prerequisites":["Royal Hogs"]
+			}
+			{
+				"name":"Snow Magic"
+				"row":4
+				"prerequisites":["Three Musketers"]
+			}
+		]
+	}
+	{
+		"columnNumber": 12,
+		"era": "Hog Mountain",
+		"techCost": 500,
+		"buildingCost": 600,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Poison"
+				"row":2
+				"prerequisites":["God's Medicines"]
+			}
+			{
+				"name":"Lazy Goblin"
+				"row":3
+				"prerequisites":["Ice Golem"]
+			}
+			{
+				"name":"Darts"
+				"row":4
+				"prerequisites":["Snow Magic"]
+			}
+			{
+				"name":"The Largest Army"
+				"row":6
+				"prerequisites":["Big Skeleton"]
+			}
+		]
+	}
+	{
+		"columnNumber": 13,
+		"era": "Hog Mountain",
+		"techCost": 580,
+		"buildingCost": 670,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Furnace"
+				"row":1
+				"prerequisites":["Poison"]
+			}
+			{
+				"name":"Tesla"
+				"row":2
+				"prerequisites":["Poison"]
+			}
+			{
+				"name":"Stone Golem"
+				"row":3
+				"prerequisites":["Lazy Goblin"]
+			}
+			{
+				"name":"Aggressive Offensive"
+				"row":5
+				"prerequisites":["The Largest Army", "Darts"]
+				"uniques": ["[+1] Movement <for [Embarked] units>","Enables [Embarked] units to enter ocean tiles"],
+			}
+			{
+				"name":"Defense Line"
+				"row":7
+				"prerequisites":["The Largest Army"]
+			}
+		]
+	}
+	{
+		"columnNumber": 14,
+		"era": "Spooky Town",
+		"techCost": 660,
+		"buildingCost": 740,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Fire Shot's"
+				"row":1
+				"prerequisites":["Furnace"]
+			}
+			{
+				"name":"Electric Shot's"
+				"row":2
+				"prerequisites":["Tesla"]
+			}
+			{
+				"name":"Dig"
+				"row":4
+				"prerequisites":["Aggressive Offensive", "Stone Golem"]
+			}
+			{
+				"name": "Wild Riders",
+				"row": 6,
+				"prerequisites":["Aggressive Offensive"]
+			}
+		]
+	},
+	{
+		"columnNumber": 15,
+		"era": "Spooky Town",
+		"techCost": 740,
+		"buildingCost": 800,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Bombs"
+				"row":1
+				"prerequisites":["Fire Shot's"]
+			}
+			{
+				"name":"Disaster"
+				"row":2
+				"prerequisites":["Electric Shot's", "Fire Shot's"]
+			}
+			{
+				"name":"Reborn After Death"
+				"row":4
+				"prerequisites":["Dig"]
+			}
+			{
+				"name":"Electric Entity's"
+				"row":5
+				"prerequisites":["Dig", "Wild Riders"]
+			}
+		]
+	}
+	{
+		"columnNumber": 16,
+		"era": "Rascal's Hideout",
+		"techCost": 800,
+		"buildingCost": 850,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Bowling"
+				"row":1
+				"prerequisites":["Bombs"]
+			}
+			{
+				"name":"Frankenstein"
+				"row":4
+				"prerequisites":["Reborn After Death"]
+			}
+			{
+				"name":"Medicinal Spirits"
+				"row":3
+				"prerequisites":["Disaster", "Reborn After Death"]
+			}
+			{
+				"name":"Magic Bow"
+				"row":5
+				"prerequisites":["Electric Entity's"]
+			}
+			{
+				"name":"Bandit's"
+				"row":6
+				"prerequisites":["Electric Entity's"]
+			}
+		]
+	}
+	{
+		"columnNumber": 17,
+		"era": "Serenity Peak",
+		"techCost": 900,
+		"buildingCost": 910,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Secret Weapon"
+				"row":7
+				"prerequisites":["Defense Line"]
+			}
+			{
+				"name":"Axes"
+				"row":4
+				"prerequisites":["Magic Bow", "Frankenstein"]
+			}
+			{
+				"name":"Elixir"
+				"row":2
+				"prerequisites":["Bowling", "Medicinal Spirits"]
+			}
+			{
+				"name":"Mail"
+				"row":6
+				"prerequisites":["Bandit's", "Magic Bow"]
+			}
+		]
+	}
+	{
+		"columnNumber": 18,
+		"era": "Miner's Mine",
+		"techCost": 940,
+		"buildingCost": 1000,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name":"Void Magic"
+				"row":3
+				"prerequisites":["Elixir", "Axes"]
+			}
+			{
+				"name":"The Power of Time"
+				"row":6
+				"prerequisites":["Secret Weapon", "Mail"]
+			}
+		]
+	}
+	{
+		"columnNumber": 19,
+		"era": "Legendary Arena",
+		"techCost": 1000,
+		"buildingCost": 1100,
+		"wonderCost": 185,
+		"techs": [
+			{
+			"name":"Hero"
+			"row":5
+			"prerequisites":["The Power of Time", "Void Magic"]
+			"uniques":["Can be continually researched"]
+			}
+		]
+	}
+]

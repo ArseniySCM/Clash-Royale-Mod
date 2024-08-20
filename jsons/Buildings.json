@@ -1,0 +1,279 @@
+[
+	{
+		"name": "Town Hall",
+		"isNationalWonder": true,
+		"production": 3,
+		"science": 3,
+		"gold": 3,
+		"culture": 1,
+		"cityStrength": 2,
+		"cost": 1,
+		"uniques": ["Indicates the capital city"]
+	},
+	{
+		"name": "Sauna",
+		"maintenance": 3,
+		"hurryCostModifier": 50,
+		"uniques": ["Remove extra unhappiness from annexed cities",
+		"Can only be built <in [Annexed] cities>"],
+		"requiredTech": "Great Warriors"
+	},
+	{
+		"name": "Walls",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"requiredBuilding":"Tower Princess"
+		"hurryCostModifier": 25,
+		"requiredTech": "Destroy Power",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Water Mill",
+		"food": 1,
+		"production": 3,
+		"hurryCostModifier": 25,
+		"uniques": ["Must be on [River]"],
+		"requiredTech": "Iron Barrels"
+	},
+	{
+		"name":"Gold Storage"
+		"gold":2
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"gold": 25},
+		"requiredTech": "Pillaging"
+		"uniques": ["Destroyed when the city is captured"]
+	}
+	{
+		"name":"Elixir Storage"
+		"production":1
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"production": 25},
+		"requiredTech": "Battle Ram"
+		"maintenance": 2,
+		"uniques": ["Destroyed when the city is captured"]
+	}
+	{
+		"name":"Gold Mine"
+		"gold":4
+		"hurryCostModifier": 25,
+		"requiredTech": "Pillaging"
+		"uniques": ["Destroyed when the city is captured"]
+	}
+	{
+		"name":"Elixir Collector"
+		"production":4
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredTech": "Battle Ram"
+	}
+	{
+		"name": "Barracks",
+		"hurryCostModifier": 25,
+		"maintenance": 2,
+		"uniques": ["New [Military] units start with [15] Experience [in this city]", "Destroyed when the city is captured"],
+		"requiredTech": "Barbarians"
+	},
+	{
+		"name":"Gem Mine"
+		"uniqueTo":"Miners"
+		"replaces":"Gold Mine"
+		"hurryCostModifier": 25,
+		"gold":5
+		"requiredTech": "Pillaging"
+		"uniques": ["Destroyed when the city is captured", "Provides [2] [Iron]", "Provides [1] [Coal]"]
+	}
+	{
+		"name":"Dark Elixir Drill"
+		"gold": 3
+		"production":3
+		"hurryCostModifier": 75,
+		"cost":800
+		"requiredBuilding": "Elixir Collector",
+		"requiredTech": "Dig"
+	}
+	{
+		"name":"Dark Elixir Storage"
+		"production":3
+		"gold":3
+		"cost":1000
+		"isNationalWonder": true,
+		"hurryCostModifier": 25,
+		"requiredTech": "Dig"
+		"requiredBuilding": "Elixir Storage",
+		"uniques": ["[+15]% [Production] [in all cities]", "[+15]% [Gold] [in all cities]", "Only available <if [Dark Elixir Drill] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city"]
+	}
+	//Towers
+	{
+		"name": "Tower Princess",
+		"cityStrength": 5,
+		"cost":25
+		"cityHealth": 10,
+		"hurryCostModifier": 25,
+		"requiredTech": "Targets",
+	},
+	{
+		"name":"Cannonner"
+		"cityStrength": 15,
+		"cityHealth": 30,
+		"hurryCostModifier": 25,
+		"requiredBuilding":"Walls"
+		"requiredTech": "Big Walls",
+	}
+	{
+		"name":"Dugger Duchess"
+		"cityStrength": 15,
+		"cityHealth": 50,
+		"hurryCostModifier": 25,
+		"requiredBuilding":"Cannonner"
+		"requiredTech": "Electric Shot's",
+	}
+	//Science
+	{
+		"name":"Laboratory"
+		"maintenance": 2,
+		"science":2
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"science": 33},
+		//"specialistSlots": {"Scientist": 2},
+		//"requiredBuilding": "Library",
+		"uniques": ["[+33]% Production when constructing [Spell] units [in this city]", "Unavailable <when [Rating] Victory is enabled>"],
+		"requiredTech": "Witches"
+	}
+	{
+		"name": "Observatory",
+		"maintenance": 3,
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"science": 33},
+		"requiredBuilding": "Laboratory",
+		"uniques": ["[+1 Science] per [4] population [in this city]", "Unavailable <when [Rating] Victory is enabled>"],
+		"requiredTech": "Tesla"
+	},
+	{
+		"name": "Clan Castle",
+		"isNationalWonder": true,
+		"cityStrength": 15,
+		"cityHealth": 100,
+		"cost":470
+		"hurryCostModifier": 25,
+		"requiredTech": "Real Dragon",
+		"uniques": ["Only available <if [Walls] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city"]
+	},
+	{
+		"name": "Harbor",
+		"cost": 240,
+		"maintenance": 2,
+		"production":2
+		"science":1
+		"gold":1
+		"hurryCostModifier": 25,
+		"uniques": [/*"[+1 Production] from [Water resource] tiles [in this city]",*/
+			"Connects trade routes over water","Must be next to [Coast]"],
+		"requiredTech": "Powerful Buildings"
+	},
+	{
+		"name": "Dark Barracks",
+		"hurryCostModifier": 25,
+		"maintenance": 3,
+		"requiredBuilding": "Barracks",
+		"uniques": ["New [Military] units start with [15] Experience [in this city]", "Destroyed when the city is captured"],
+		"requiredTech": "Magic Steel"
+	},
+	{
+		"name":"Spell Factory"
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"production":1
+		"uniques":["[+33]% Production when constructing [Spell] units [in this city]"]
+		"requiredTech": "Electric Potion"
+	}
+	{
+		"name":"Dark Spell Factory"
+		"hurryCostModifier": 25,
+		"maintenance": 2,
+		"requiredBuilding": "Spell Factory",
+		"uniques":["[+50]% Production when constructing [Spell] units [in this city]", "[+1 Production] per [4] population [in this city]"]
+		"requiredTech": "Disaster"
+	}
+	//Chests
+	{
+		"name":"Wood Chest"
+		"gold":1
+		"happiness":1
+		"cost":50
+		"uniques":["Unbuildable", "Can be purchased with [Gold] [in all cities]", "Unsellable"]
+		"requiredTech": "Training of Goblins"
+	}
+	{
+		"name":"Silver Chest"
+		"production":2
+		"happiness":2
+		"cost":100
+		"uniques":["Unbuildable", "Can be purchased with [Gold] [in all cities]", "Unsellable"]
+		"requiredTech": "Fire Magic"
+	}
+	{
+		"name":"Golden Chest"
+		"culture":1
+		"gold":1
+		"production":1
+		"happiness":3
+		"cost":200
+		"uniques":["Unbuildable", "Can be purchased with [Gold] [in all cities]", "Unsellable"]
+		"requiredTech": "God's Medicines"
+	}
+	{
+		"name":"Epic Chest"
+		"uniqueTo":"Village of Builder"
+		"replaces":"Golden Chest"
+		"culture":2
+		"gold":2
+		"production":2
+		"happiness":4
+		"cost":250
+		"uniques":["Unbuildable", "Can be purchased with [Gold] [in all cities]", "Unsellable"]
+		"requiredTech": "God's Medicines"
+	}
+	//Spawn
+	{
+		"name":"Goblin Hut"
+		"maintenance": 3
+		"uniques":["[+20]% Production when constructing [Goblin] units [in this city]"]
+		"requiredTech": "Training of Goblins"
+	}
+	{
+		"name":"Tombstone"
+		"maintenance": 3
+		"uniques":["[+20]% Production when constructing [Skeleton] units [in this city]"]
+		"requiredTech": "Burial Place"
+	}
+	{
+		"name":"Barbarian Hut"
+		"maintenance": 3
+		"uniques":["[+20]% Production when constructing [Barbarian] units [in this city]"]
+		"requiredTech": "Battle Ram"
+	}
+	{
+		"name":"Furnace"
+		"maintenance": 3
+		"uniques":["[+20]% Production when constructing [Spirit] units [in this city]"]
+		"requiredTech": "Poison"
+	}
+	{
+		"name":"Flag"
+		"maintenance":1
+		"culture":1
+		"requiredTech":"Fire Meteor"
+	}
+	{
+		"name":"Crown"
+		"isWonder":True
+		"cost":1000
+		"culture":10
+		"production":10
+		"science":10
+		"happiness":10
+		"gold":10
+		"requiredTech":"Hero"
+		"uniques":["[+10]% Strength <for [All] units>"]
+	}
+]

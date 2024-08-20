@@ -1,0 +1,193 @@
+[
+
+	{
+		"name": "Farm",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Training of Units",
+		"uniques": ["Can also be built on tiles adjacent to fresh water",
+            "Pillaging this improvement yields approximately [+18 Gold]", "[+1 Food] <after discovering [Royal Hogs]>", "[+1 Food] from [Fresh water] tiles <after discovering [Snow Magic]>"],
+		"shortcutKey": "F"
+	},
+	{
+		"name": "Lumber mill",
+		"terrainsCanBeBuiltOn": ["Forest"],
+		"production": 3,
+		"turnsToBuild": 7,
+		"techRequired": "Axes",
+		"uniques": ["Pillaging this improvement yields approximately [+10 Gold]"],
+		"shortcutKey": "L"
+	},
+	{
+		"name": "Mine",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"production": 2,
+		"gold":1
+		"turnsToBuild": 7,
+		"techRequired": "Gunpowder",
+		"uniques": ["Pillaging this improvement yields approximately [+20 Gold]"],
+		"shortcutKey": "M"
+	},
+	{
+		"name": "Trading post",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains"],
+		"gold": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Mega Minion",
+		"uniques": ["Pillaging this improvement yields approximately [+20 Gold]"],
+		"shortcutKey": "T"
+	},
+	{
+		"name":"Statue"
+		"turnsToBuild": 7
+		"terrainsCanBeBuiltOn":["Land"]
+		"techRequired":"Great Warriors"
+		"uniques": ["Pillaging this improvement yields approximately [+8 Gold]", "[+1 Culture] <after discovering [Royal Guard]>"],
+		"culture":1
+	}
+	// Resource-specific
+	{
+		"name": "Camp",
+		"turnsToBuild": 7,
+		"techRequired": "Training of Units",
+		"uniques": ["Does not need removal of [Forest]","Does not need removal of [Jungle]", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+10 Gold]"],
+		"shortcutKey": "C"
+	},
+	{
+		"name": "Pasture",
+		"turnsToBuild": 8,
+		"techRequired": "Training of Units",
+		"uniques": ["Can only be built to improve a resource", "Pillaging this improvement yields approximately [+10 Gold]"],
+		"shortcutKey": "P"
+	},
+	{
+		"name": "Plantation",
+		"turnsToBuild": 6,
+		"gold": 1,
+		"techRequired": "Training of Units",
+		"uniques": ["[+1 Food] <after discovering [Training of Units]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+10 Gold]"],
+		"shortcutKey": "P"
+	},
+	{
+		"name": "Quarry",
+		"turnsToBuild": 8,
+		"techRequired": "Training of Units",
+		"uniques": ["[+1 Production] <after discovering [Training of Units]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+20 Gold]"],
+		"shortcutKey": "Q"
+	},
+	
+
+	// Military improvement
+	
+
+	// Transportation
+	/*{
+		"name": "Road",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 4,
+		"techRequired": "Riding on Hogs",
+		"uniques": ["Can be built outside your borders", "Costs [1] [Gold] per turn"],
+		"shortcutKey": "R",
+        "civilopediaText": [
+           {"text":"Reduces movement cost to ½ if the other tile also has a Road or Railroad"},
+            //{"text":"Reduces movement cost to ⅓ with Powerful Buildings", "link":"Technology/Powerful Buildings"},
+            //{"text":"Requires Defense line to bridge rivers", "link":"Technology/Defense line"}
+        ]
+	},
+	{
+		"name": "Railroad",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 4,
+		"techRequired": "Miner's Mine",
+		"uniques": ["Can be built outside your borders", "Costs [2] [Gold] per turn"],
+		"shortcutKey": "R",
+        "civilopediaText": [
+            {"text":"Reduces movement cost to ⅒ if the other tile also has a Railroad"},
+            {"text":"Provides a +25% [Production] bonus to cities connected to the capital by Railroads"}
+        ]
+	},
+	{
+		"name": "Remove Road",
+		"turnsToBuild": 2,
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"]
+	},
+	{
+		"name": "Remove Railroad",
+		"turnsToBuild": 2,
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"]
+	},
+	*/
+	{
+		"name": "Remove Freeze",
+		"turnsToBuild": 2,
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"]
+	},
+	{
+		"name": "Cancel improvement order",
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "."
+	},
+    // Purely for turnsToBuild and civilopediaText. Unbuildable so it doesn't show in ImprovementPicker
+    {
+        "name": "Repair",
+        "terrainsCanBeBuiltOn": ["Land"],
+        "turnsToBuild": 2,
+        "uniques": ["Unbuildable", "Excluded from map editor"],
+        "shortcutKey": "E",
+        "civilopediaText": [{"text":"Repairs a pillaged Improvement or Route"}]
+    },
+
+	// Great Person improvements
+	
+	{
+		"name": "Citadel",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Great Improvement",
+			"Gives a defensive bonus of [100]%",
+			"Adjacent enemy units ending their turn take [30] damage",
+			"Can be built just outside your borders",
+			"Gain control over [all] tiles in a [1]-tile radius",
+			"Removes removable features when built",
+            "Will not be replaced by automated units"
+		]
+	},
+	{
+		"name":"Freeze"
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques":["Can be built just outside your borders",   "Gives a defensive bonus of [-50]%","Adjacent enemy units ending their turn take [10] damage", "Unpillagable", /*"Unbuildable",*/ "Removes removable features when built", "Will not be replaced by automated units"]
+	}
+
+	//Civilization unique improvements
+	
+
+	// Unbuildable improvements
+	{
+		"name": "Ancient ruins",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Provides a random bonus when entered", "Unbuildable"]
+	},
+	{
+		"name": "City ruins",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Unbuildable"],
+        "civilopediaText": [{"text":"A bleak reminder of the destruction wreaked by War"}]
+	},
+	{
+		"name": "City center",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Ensures a minimum tile yield of [+2 Food, +1 Production]",
+            "Unpillagable", "Irremovable", "Unbuildable", "Excluded from map editor"],
+        "civilopediaText": [
+			{"text":"Marks the center of a city"},
+			{"text":"Appearance changes with the technological era of the owning civilization"}
+		]
+	},
+	{
+		"name": "Barbarian encampment",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Unbuildable", "Excluded from map editor"],
+        "civilopediaText": [{"text":"Home to uncivilized barbarians, will spawn a hostile unit from time to time"}]
+	}
+]
