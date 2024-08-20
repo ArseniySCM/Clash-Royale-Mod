@@ -1,0 +1,138 @@
+Other.png
+size: 512, 512
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+TileSets/HexaRealm/Tiles/Statue
+  rotate: false
+  xy: 0, 0
+  size: 64, 56
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Freeze
+  rotate: false
+  xy: 66, 0
+  size: 64, 56
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Animals
+  rotate: false
+  xy: 0, 58
+  size: 64, 56
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Animals+Pasture
+  rotate: false
+  xy: 66, 58
+  size: 64, 56
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Hop
+  rotate: false
+  xy: 132, 0
+  size: 64, 56
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Hop+Plantation
+  rotate: false
+  xy: 132, 66
+  size: 64, 56
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Freeze
+  rotate: false
+  xy: 0, 128
+  size: 32, 32
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Statue
+  rotate: false
+  xy: 0, 192
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ResourceIcons/Hop
+  rotate: false
+  xy: 32, 128
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ResourceIcons/Animals
+  rotate: false
+  xy: 96, 128
+  size: 96, 96
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+NationIcons/Red Kingdom
+  rotate: false
+  xy: 224, 0
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+NationIcons/Blue Kingdom
+  rotate: false
+  xy: 224, 0
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+NationIcons/Bone Lands
+  rotate: false
+  xy: 224, 64
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+NationIcons/Mages
+  rotate: false
+  xy: 224, 128
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+NationIcons/Goblins
+  rotate: false
+  xy: 288, 0
+  size: 96, 96
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+NationIcons/Miners
+  rotate: false
+  xy: 288, 96
+  size: 96, 96
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+NationIcons/Shooters
+  rotate: false
+  xy: 384, 0
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+NationIcons/Temple of Riders
+  rotate: false
+  xy: 384, 64
+  size: 96, 96
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+NationIcons/Village of Builder
+  rotate: false
+  xy: 448, 0
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
